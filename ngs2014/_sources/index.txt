@@ -1,0 +1,10 @@
+Welcome to NGS 2014's documentation!
+====================================
+
+.. toctree::
+   :maxdepth: 2
+
+   chapter01
+   chapter02
+   chapter03
+   citations

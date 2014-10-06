@@ -1,0 +1,55 @@
+.. [References]
+
+.. [Greil2013] Greil J, Rausch T, Giese T, Bandapalli OR, Daniel V, Bekeredjian-Ding I, Stütz AM, Drees C, Roth S, Ruland J, Korbel JO, Kulozik AE. Whole-exome sequencing links caspase recruitment domain 11 (CARD11) inactivation to severe combined immunodeficiency. J Allergy Clin Immunol. 2013 May;131(5):1376-83.e3.
+
+.. [IGV] Thorvaldsdóttir H, Robinson JT, Mesirov JP. Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration. Brief Bioinform. 2013 Mar;14(2):178-92.
+
+.. [Li2009a] Li H, Durbin R. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics. 2009 Jul 15;25(14):1754-60.
+
+.. [Li2009b] Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R; 1000 Genome Project Data Processing Subgroup. The Sequence Alignment/Map format and SAMtools. Bioinformatics. 2009 Aug 15;25(16):2078-9.
+
+.. [McKenna2010] McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, Garimella K, Altshuler D, Gabriel S, Daly M, DePristo MA. The Genome Analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010 Sep;20(9):1297-303.
+
+.. [Rausch2012] Rausch T, Zichner T, Schlattl A, Stütz AM, Benes V, Korbel JO. DELLY: structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics. 2012 Sep 15;28(18):i333-i339.
+
+.. [Wang2010] Wang K, Li M, Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res. 2010 Sep;38(16):e164.
+
+.. [URLs]
+
+.. [Annovar] http://www.openbioinformatics.org/annovar/
+
+.. [Bam] http://samtools.sourceforge.net/SAMv1.pdf
+
+.. [dbSNP] http://www.ncbi.nlm.nih.gov/SNP/
+
+.. [Dream] https://www.synapse.org/#!Synapse:syn312572
+
+.. [Fastq] http://en.wikipedia.org/wiki/FASTQ_format
+
+.. [Fastqc] http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+.. [FastqcDoc] http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/
+
+.. [FASTX] http://hannonlab.cshl.edu/fastx_toolkit/
+
+.. [GATK] http://www.broadinstitute.org/gatk/
+
+.. [GP] http://www.1000genomes.org/
+
+.. [Picard] http://picard.sourceforge.net/
+
+.. [PicardDoc] http://picard.sourceforge.net/picard-metric-definitions.shtml
+
+.. [R] http://www.r-project.org/
+
+.. [Rausch] https://tobiasrausch.github.io
+
+.. [Samtools] http://samtools.sourceforge.net/
+
+.. [SnpEff] http://snpeff.sourceforge.net/
+
+.. [Trimmomatic] http://www.usadellab.org/cms/?page=trimmomatic
+
+.. [VCFtools] http://vcftools.sourceforge.net/
+
+
