@@ -1,9 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-{% include head.html %}
-<body>
-    <main class="container" role="main">
-	{{ content }}
-    </main>
-</body>
+    {% include head.html %}
+    
+    <body>
+	{% include menu.html %}
+	<section class="main-content">
+	    {{ content }}
+	</section>
+    </body>
 </html>
