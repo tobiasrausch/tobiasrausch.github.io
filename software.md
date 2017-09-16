@@ -1,7 +1,7 @@
 ---
+title: Software
 layout: default
-title: Github Projects
-permalink: /github/
+permalink: "/software/"
 ---
 
 **[Delly][de]**
@@ -18,4 +18,3 @@ BAM Statistics and Feature Counting
 [de]: https://github.com/dellytools/delly "Delly GitHub Repository"
 [al]: https://github.com/tobiasrausch/alfred "Alfred GitHub Repository"
 [ma]: https://github.com/tobiasrausch/ "My GitHub Page"
-
