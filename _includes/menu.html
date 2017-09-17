@@ -1,6 +1,6 @@
 <section class="page-header">
     <h2 class="project-tagline">{{ page.title | escape }}</h2>
-    <a href="{{ '/' | relative_url }}" class="btn">Home</a>
+    <a href="{{ '/' | relative_url }}" class="btn">Posts</a>
     {% for item in site.data.menu %}    
     <a href="{{ item.url | relative_url }}" class="btn">{{ item.title | escape }}</a>
     {% endfor %}
