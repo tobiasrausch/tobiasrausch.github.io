@@ -164,7 +164,50 @@ You can look at the header of the VCF file using grep, '-A 1' includes the first
 bcftools view snv.vcf.gz | grep "^#" -A 1
 ```
 
+Using [BCFtools](https://samtools.github.io/bcftools/bcftools.html) we can generate some useful summary statistics such as the [transition/transversion ratio](https://en.wikipedia.org/wiki/Transversion).
 
+```shell
+bcftools stats snv.vcf.gz | grep "TSTV"
+```
+
+***Exercises***
+
+* How many SNPs have been called (hint: bcftools stats, SN tag)?
+* How many InDels have been called (hint: bcftools stats, SN tag)?
+* How many C>T mutations have been called (hint: bcftools stats, ST tag)?
+
+
+## Filtering Variants
+
+In most applications researchers use external ground truth data to calibrate a variant calling pipeline. In our case we do not know the ground truth so we will illustrate some filtering options based on summary statistics such as the transition/transversion ratio. In most species, transitions are far more likely than transversions and for humans we would expect a transition/transversion ratio of approximately 2.
+
+```shell
+bcftools stats snv.vcf.gz | grep "TSTV"
+bcftools filter -i '%QUAL>20' snv.vcf.gz  | bcftools stats | grep "TSTV"
+bcftools filter -e '%QUAL<=20 || %QUAL/AO<=2 || SAF<=2 || SAR<=2' snv.vcf.gz  | bcftools stats | grep "TSTV"
+```
+
+Another useful bulk metric is the length of indels in exons because most InDel polymorphisms should be in-frame. In order to check this we first need to get exon coordinates.
+
+```R
+library(GenomicFeatures)
+db=makeTxDbFromUCSC(genome="hg19", tablename="ccdsGene")
+ex=keepStandardChromosomes(reduce(exons(db), ignore.strand=T))
+df=data.frame(chr=seqnames(ex), start=start(ex), end=end(ex))
+write.table(df, "exons.bed", quote=F, row.names=F, sep="\t")
+```
+
+The exon file needs to be compressed and indexed to calculate in-frame and out-frame InDel statistics.
+
+```shell
+bgzip exons.bed
+tabix -S 1 -s1 -b2 -e3 exons.bed.gz
+bcftools stats -E exons.bed.gz snv.vcf.gz | grep "FS"
+```
+
+As you can see, we have only one in-frame exonic InDel because our data is downsampled. This metric is most useful for a large population VCF file with hundreds of samples. Similarly, [heterozygosity](https://en.wikipedia.org/wiki/Zygosity) is a useful metric for such population cohorts, which tends to be higher in Africans compared to Europeans or East Asians.
+
+## Variant Annotation
 
 
 
