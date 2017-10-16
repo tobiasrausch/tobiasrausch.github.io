@@ -124,10 +124,46 @@ quit()
 
 * What is the median coverage of the data set?
 * What is the meaning of the different library layouts (F+, F-, R+, R-)?
-
+* What is the duplicate fraction in the library?
+* Would it make sense to sequence this library deeper to achieve 30x coverage?
 
 
 ## Variant Calling
+
+Once the alignment is sorted and duplicates are marked we can run a variant caller such as [FreeBayes](https://github.com/ekg/freebayes) to scan the alignments for differences compared to the reference.
+
+```bash
+freebayes --fasta-reference chr7.fa -b rd.rmdup.bam -v snv.vcf
+```
+
+Compressing and indexing of the output VCF file will again speed up random access to the file.
+
+```bash
+bgzip snv.vcf
+tabix snv.vcf.gz
+```
+
+The [VCF](https://samtools.github.io/hts-specs) format has multiple header lines starting with the hash # sign. Below the header lines is one record for each variant. The record format is described in the below table:
+
+| Col | Field  | Description         |
+|-----|--------|---------------------|
+| 1   | CHROM  | Chromosome name |
+| 2   | POS    | 1-based position. For an indel, this is the position preceding the indel. |
+| 3   | ID     | Variant identifier. Usually the dbSNP rsID. |
+| 4   | REF    | Reference sequence at POS involved in the variant. For a SNP, it is a single base. |
+| 5   | ALT    | Comma delimited list of alternative sequence(s). |
+| 6   | QUAL   | Phred-scaled probability of all samples being homozygous reference. |
+| 7   | FILTER | Semicolon delimited list of filters that the variant fails to pass. |
+| 8   | INFO   | Semicolon delimited list of variant information. |
+| 9   | FORMAT | Colon delimited list of the format of individual genotypes in the following fields. |
+| 10+ | Samples| Individual genotype information defined by FORMAT. |
+
+You can look at the header of the VCF file using grep, '-A 1' includes the first variant record in the file:
+
+```shell
+bcftools view snv.vcf.gz | grep "^#" -A 1
+```
+
 
 
 
