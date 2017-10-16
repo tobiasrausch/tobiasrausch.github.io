@@ -205,9 +205,44 @@ tabix -S 1 -s1 -b2 -e3 exons.bed.gz
 bcftools stats -E exons.bed.gz snv.vcf.gz | grep "FS"
 ```
 
-As you can see, we have only one in-frame exonic InDel because our data is downsampled. This metric is most useful for a large population VCF file with hundreds of samples. Similarly, [heterozygosity](https://en.wikipedia.org/wiki/Zygosity) is a useful metric for such population cohorts, which tends to be higher in Africans compared to Europeans or East Asians.
+As you can see, we have only one in-frame exonic InDel because our data is downsampled. This metric is most useful for a large population VCF file with hundreds of samples. Similarly, [heterozygosity](https://en.wikipedia.org/wiki/Zygosity) is a useful metric for such population cohorts, which tends to be higher in Africans compared to Europeans or East Asians. In our case we move on with our simple threshold based filtering and subset the VCF to exonic variants.
+
+```shell
+bcftools filter -O z -o exon.vcf.gz -R <(zcat exons.bed.gz | tail -n +2) -e '%QUAL<=20 || %QUAL/AO<=2 || SAF<=2 || SAR<=2' snv.vcf.gz
+bcftools stats exon.vcf.gz | egrep "SN|TSTV"
+```
+
+***Exercises***
+
+* Plot the InDel length distribution of all called InDels (hint: bcftools stats, IDD tag).
 
 ## Variant Annotation
+
+Variant annotation and classification is a challenging process. You can
+
+* use transcript annotations from Ensembl, UCSC or RefSeq
+* there is a long list of mutation prediction tools such as PolyPhen, MutationTaster or Sift
+* you can annotate variants with allele frequency information from variation archives such as dbSNP, ExAC or gnomAD
+* you can check the expression of genes in your studied tissue using GTEx.
+
+In the recent years a number of convenient pipelines have been developed that ease the annotation of variants with some of the above information. In this practical we will use [VEP](http://www.ensembl.org/info/docs/tools/vep/index.html) because it can be run directly online. We first dump all SNPs in a VEP compliant format which you can
+then copy and paste into the VEP application. Make sure you use the hg19/GRCh37 version available [here](http://grch37.ensembl.org/Homo_sapiens/Tools/VEP).
+
+```shell
+bcftools query -f "%CHROM\t%POS\t%ID\t%REF\t%ALT\n" exon.vcf.gz
+```
+
+A working variant annotation and classification pipeline can easily reduce an initial call set of several thousands of exonic variants to a handful mutation candidates. In a rare disease setting additional power can be gained by taking advantage of the suspected inheritance model (autosomal recessive, autosomal dominant, etc.). 
+
+```shell
+bcftools query -f "%CHROM\t%POS\t%ID\t%REF\t%ALT\t[%GT]\n" exon.vcf.gz
+```
+
+***Excerises***
+
+* What would be a useful additional filter in our case given that the index patient has consanguineous parents?
+* How could we use variation archives to further filter the list of exonic variants?
+* Which annotation features could be used to rank the mutation list for a clinician?
 
 
 
