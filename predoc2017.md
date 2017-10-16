@@ -6,11 +6,11 @@ permalink: "/predoc2017/"
 
 This practical provides an introduction into variant discovery and genotyping. We will cover single-nucleotide variants, short insertions and deletions (InDels) and large structural variants. All data of this practical has been anonomyzed and subsampled to speed up the analyses.
 
-***Rare Disease Genetics***
+## Rare Disease Genetics
 
 We will start with a [rare disease](https://www.ncbi.nlm.nih.gov/pubmed/23999272) case that we analyzed in 2012. This infant of consanguineous parents suffered from severe combined immunodeficiency and the details are described in this [publication](https://www.ncbi.nlm.nih.gov/pubmed/23561803).
 
-***Reference Indices***
+## Reference Indices
 
 We will first map the data to the Human reference genome using [BWA](https://github.com/lh3/bwa). To speed up the mapping the reference genome needs to be indexed. BWA uses an FM-Index which is built around the [Burrows-Wheeler transform](https://de.wikipedia.org/wiki/Burrows-Wheeler-Transformation).
 
@@ -32,11 +32,13 @@ We can now, for instance, extract 50bp from position 10017.
 samtools faidx chr7.fa chr7:10017-10067
 ```
 
+***Exercises***
+
 * What is the length of chr7.
 
 
 
-***Alignment***
+## Alignment
 
 Once the index has been built we can map the paired-end [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) data against the reference and convert it to [BAM](http://www.htslib.org).
 
@@ -77,7 +79,7 @@ samtools sort -o rd.srt.bam rd.bam
 samtools index rd.srt.bam
 ```
 
-***Mark Duplicates and Alignment Quality Control***
+## Mark Duplicates and Alignment Quality Control
 
 Unless you are using a PCR-free library, PCR duplicates are common in DNA-sequencing and should be flagged prior to variant calling.
 
@@ -116,15 +118,14 @@ q
 quit()
 ```
 
-Exercises
----------
+***Exercises***
 
 * What is the median coverage of the data set?
 * What is the meaning of the different library layouts (F+, F-, R+, R-)?
 
 
 
-***Variant Calling***
+## Variant Calling
 
 
 
