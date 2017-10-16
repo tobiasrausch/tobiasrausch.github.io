@@ -32,6 +32,10 @@ We can now, for instance, extract 50bp from position 10017.
 samtools faidx chr7.fa chr7:10017-10067
 ```
 
+* What is the length of chr7.
+
+
+
 ***Alignment***
 
 Once the index has been built we can map the paired-end [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) data against the reference and convert it to [BAM](http://www.htslib.org).
@@ -93,6 +97,32 @@ samtools flagstat rd.rmdup.bam
 alfred qc -r chr7.fa -o stats rd.rmdup.bam
 cat stats.metrics.tsv | datamash transpose | column -t
 ```
+
+All distribution files are simple tab-delimited text files that can be easily visualized in [R](https://www.r-project.org/).
+
+
+```R
+library(ggplot2)
+cov=read.table("stats.coverage.tsv", header=T)
+p=ggplot(data=cov, aes(x=Coverage, y=Count))
+p=p + geom_line()
+p=p + coord_cartesian(xlim=c(0,50))
+p
+isize=read.table("stats.isize.tsv", header=T)
+q=ggplot(data=isize, aes(x=InsertSize, y=Count))
+q=q + geom_line(aes(group=Layout, color=Layout))
+q=q + coord_cartesian(xlim=c(0,600))
+q
+quit()
+```
+
+Exercises
+---------
+
+* What is the median coverage of the data set?
+* What is the meaning of the different library layouts (F+, F-, R+, R-)?
+
+
 
 ***Variant Calling***
 
