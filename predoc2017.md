@@ -32,7 +32,7 @@ We can now, for instance, extract 50bp from position 10017.
 samtools faidx chr7.fa chr7:10017-10067
 ```
 
-*** Alignment***
+***Alignment***
 
 Once the index has been built we can map the paired-end [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) data against the reference and convert it to [BAM](http://www.htslib.org).
 
@@ -66,6 +66,35 @@ Please familiarize yourself with the [BAM](http://www.htslib.org) format, the re
 
 The bitwise FLAG can be decoded using the [explain flag tool](https://broadinstitute.github.io/picard/explain-flags.html) from the picard distribution.
 
+We need to sort the alignments and can then also built an index to allow a random extraction of alignments.
+
+```bash
+samtools sort -o rd.srt.bam rd.bam
+samtools index rd.srt.bam
+```
+
+***Mark Duplicates and Alignment Quality Control***
+
+Unless you are using a PCR-free library, PCR duplicates are common in DNA-sequencing and should be flagged prior to variant calling.
+
+```bash
+bammarkduplicates I=rd.srt.bam O=rd.rmdup.bam M=rd.metrics.tsv index=1 rmdup=0
+```
+
+SAMtools flagstat computes some basic alignment statistics such as the number of properly paired reads and singletons.
+
+```bash
+samtools flagstat rd.rmdup.bam
+```
+
+[Alfred](https://github.com/tobiasrausch/alfred) can be used to compute the insert size distribution, the coverage distribution and alignment error rates.
+
+```bash
+alfred qc -r chr7.fa -o stats rd.rmdup.bam
+cat stats.metrics.tsv | datamash transpose | column -t
+```
+
+***Variant Calling***
 
 
 
