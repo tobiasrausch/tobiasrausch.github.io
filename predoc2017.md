@@ -4,6 +4,8 @@ layout: default
 permalink: "/predoc2017/"
 ---
 
+# Predoc Course 2017
+
 This practical provides an introduction into variant discovery and genotyping. We will cover single-nucleotide variants, short insertions and deletions (InDels) and large structural variants. All data of this practical has been anonomyzed and subsampled to speed up the analyses.
 
 ## Rare Disease Genetics
