@@ -36,9 +36,9 @@ samtools faidx chr7.fa chr7:10017-10067
 
 ***Exercises***
 
-* What is the length of chr7.
-
-
+* What is the length of chr7?
+* What is the GC-content of chr7? (hint: bedtools nuc)
+* What is the proportion of Ns in chr7?
 
 ## Alignment
 
