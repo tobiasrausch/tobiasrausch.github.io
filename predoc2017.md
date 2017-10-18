@@ -245,5 +245,20 @@ bcftools query -f "%CHROM\t%POS\t%ID\t%REF\t%ALT\t[%GT]\n" exon.vcf.gz
 * Which annotation features could be used to rank the mutation list for a clinician?
 
 
+## Variant Validation
 
+Once a putative causative variant has been identified these are usually validated in the index patient using PCR and Sanger sequencing. If a specific inheritance model is suspected the parents are also tested. For the likely causative variant we will design primers using [Primer3Plus](https://www.ncbi.nlm.nih.gov/pubmed/17485472) available on [gear.embl.de](https://gear.embl.de). We will first select a left primer in the preceeding sequence of the mutation and then a right primer in the suceeding sequence.
 
+```shell
+samtools faidx chr7.fa chr7:2954300-2954850
+samtools faidx chr7.fa chr7:2954900-2955450
+```
+
+The primers are locally unique and have the appropriate Tm but they are not necessarily unique in the entire genome. We can use [In-silico PCR](https://genome.ucsc.edu/cgi-bin/hgPcr) to check genome-wide uniqueness. Try different combinations of left and right primers and possibly change parameters in Primer3Plus to generate further candidates until you found a good pair of primers to validate the mutation.
+
+We do not have the time to run the PCR experiment and sequence the breakpoint mutation but the Sanger validations of the original study are shown in sanger.png.
+
+***Excerises***
+
+* Why should we not put the primers directly next to the mutation?
+* Why did we not select primers more than 1000bp away from the mutation?
