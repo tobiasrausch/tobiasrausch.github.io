@@ -258,11 +258,12 @@ The primers are locally unique and have the appropriate Tm but they are not nece
 
 We do not have the time to run the PCR experiment and sequence the breakpoint mutation but the Sanger validation files of the original study are in the data folder:
 
-You can analyze these trace files using [Indigo](https://gear.embl.de/indigo). Indigo is primarily for discovering InDels in Sanger traces but it also aligns the trace file to the reference genome so we can use it to compare the alignments and traces of the index patient to her parents. The files are .ab1 (patient), (mother) (father).
+You can analyze these trace files using [Indigo](https://gear.embl.de/indigo). Indigo is primarily for discovering InDels in Sanger traces but it also aligns the trace file to the reference genome so we can use it to compare the alignments and traces of the index patient to her parents. The files are patient.ab1, mother.ab1 and father.ab1.
 
 ***Exercises***
 
 * Why should we not put the primers directly next to the mutation?
 * Why did we not select primers more than 1000bp away from the mutation?
+* Is the gene of interest on the forward or reverse strand?
 * Can you spot the mutation in the traces and the alignment against the reference?
 * What is the validated genotype by Sanger sequencing of the mother, father and patient for the given mutation?
