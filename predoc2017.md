@@ -238,7 +238,7 @@ A working variant annotation and classification pipeline can easily reduce an in
 bcftools query -f "%CHROM\t%POS\t%ID\t%REF\t%ALT\t[%GT]\n" exon.vcf.gz
 ```
 
-***Excerises***
+***Exercises***
 
 * What would be a useful additional filter in our case given that the index patient has consanguineous parents?
 * How could we use variation archives to further filter the list of exonic variants?
@@ -258,7 +258,7 @@ The primers are locally unique and have the appropriate Tm but they are not nece
 
 We do not have the time to run the PCR experiment and sequence the breakpoint mutation but the Sanger validations of the original study are shown in sanger.png.
 
-***Excerises***
+***Exercises***
 
 * Why should we not put the primers directly next to the mutation?
 * Why did we not select primers more than 1000bp away from the mutation?
