@@ -4,7 +4,9 @@ layout: default
 permalink: "/course/"
 ---
 
-[Course Handout](https://tobiasrausch.gitbooks.io/variant-calling/content/)
+**Course Handout**
+
+[GitBook](https://tobiasrausch.gitbooks.io/variant-calling/content/)
 
 
 **Participant PCs**
