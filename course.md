@@ -11,6 +11,6 @@ permalink: "/course/"
 
 **Participant PCs**
 
-[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-29-202-192.eu-central-1.compute.amazonaws.com:22)
+[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-196-173-94.eu-central-1.compute.amazonaws.com:22)
 
 
