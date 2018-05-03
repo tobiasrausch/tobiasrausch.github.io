@@ -11,7 +11,7 @@ permalink: "/course/"
 
 **Participant PCs**
 
-[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@<ip-address-amazon-node>:22)
+[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-137-91.eu-central-1.compute.amazonaws.com:22)
 
 
 **Auxiliary data sets**
