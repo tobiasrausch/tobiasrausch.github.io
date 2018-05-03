@@ -19,6 +19,8 @@ permalink: "/course/"
 
 [Olga](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-121-187.eu-central-1.compute.amazonaws.com:22)
 
+[Guiseppe](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-57-82-163.eu-central-1.compute.amazonaws.com:22)
+
 **Auxiliary data sets**
 
 [Chrome](https://www.google.com/chrome/)
