@@ -13,6 +13,11 @@ permalink: "/course/"
 
 [Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-137-91.eu-central-1.compute.amazonaws.com:22)
 
+[Eike](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-122-207.eu-central-1.compute.amazonaws.com:22)
+
+[Nares](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-72-209.eu-central-1.compute.amazonaws.com:22)
+
+[Olga](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-121-187.eu-central-1.compute.amazonaws.com:22)
 
 **Auxiliary data sets**
 
