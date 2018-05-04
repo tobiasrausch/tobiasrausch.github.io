@@ -11,17 +11,16 @@ permalink: "/course/"
 
 **Participant PCs**
 
-[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-137-91.eu-central-1.compute.amazonaws.com:22)
+[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-196-239-192.eu-central-1.compute.amazonaws.com:22)
 
-[Ida](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-57-82-163.eu-central-1.compute.amazonaws.com:22)
+[PC1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-197-134-195.eu-central-1.compute.amazonaws.com:22)
 
-[Eike](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-122-207.eu-central-1.compute.amazonaws.com:22)
+[PC2](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-196-96-123.eu-central-1.compute.amazonaws.com:22)
 
-[Nares](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-72-209.eu-central-1.compute.amazonaws.com:22)
+[PC3](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-196-255-145.eu-central-1.compute.amazonaws.com:22)
 
-[Olga](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-121-187.eu-central-1.compute.amazonaws.com:22)
+[PC4](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-194-156-129.eu-central-1.compute.amazonaws.com:22)
 
-[Guiseppe](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-57-82-163.eu-central-1.compute.amazonaws.com:22)
 
 **Auxiliary data sets**
 
