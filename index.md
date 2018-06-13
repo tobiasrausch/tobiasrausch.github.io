@@ -11,3 +11,6 @@ My name is Tobias Rausch. I'm a dad, I like to swim and I work as a Bioinformati
 
 [2017-11-07 In-silico PCR]({% link _posts/2017-11-07-in-silico-pcr.md %})
 
+
+[2018-06-13 Variant Primer Design]({% link _posts/2018-06-13-variant-primer-design.md %})
+
