@@ -11,11 +11,11 @@ permalink: "/course/"
 
 **Participant PCs**
 
-[Harry](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-194-23-227.eu-central-1.compute.amazonaws.com:22)
-[Michael](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-90-32.eu-central-1.compute.amazonaws.com:22)
-[Finn](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-197-26-46.eu-central-1.compute.amazonaws.com:22)
-[Alex](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-196-165-60.eu-central-1.compute.amazonaws.com:22)
-[Kerim](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-194-1-226.eu-central-1.compute.amazonaws.com:22)
+[Harry](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-53-190.eu-central-1.compute.amazonaws.com:22)
+[Michael](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-35-158-115-2.eu-central-1.compute.amazonaws.com:22)
+[Finn](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-111-246.eu-central-1.compute.amazonaws.com:22)
+[Alex](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-247-47.eu-central-1.compute.amazonaws.com:22)
+[Kerim](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-172-226.eu-central-1.compute.amazonaws.com:22)
 
 
 **Connecting via SSH**
