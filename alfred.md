@@ -12,10 +12,10 @@ permalink: "/alfred/"
 
 ## Alfred: BAM alignment statistics, feature counting and feature annotation
 
-Alfred is available as a [Bioconda package](https://anaconda.org/bioconda/alfred), as a statically linked binary from the [GitHub release page](https://github.com/tobiasrausch/alfred/releases/) or as a minimal [Docker container](https://hub.docker.com/r/trausch/alfred/). Please have a look at [Alfred's documentation] for any installation or usage questions.
+Alfred is available as a [Bioconda package](https://anaconda.org/bioconda/alfred), as a statically linked binary from the [GitHub release page](https://github.com/tobiasrausch/alfred/releases/) or as a minimal [Docker container](https://hub.docker.com/r/trausch/alfred/). Please have a look at [Alfred's documentation](https://gear.embl.de/docs/alfred/) for any installation or usage questions.
 
 [Source Code](https://github.com/tobiasrausch/alfred/)
 
-[Web Application](https://gear.embl.de/alfred)
+[Web Application](https://gear.embl.de/alfred/)
 
-[Documentation](https://gear.embl.de/docs/alfred)
+[Documentation](https://gear.embl.de/docs/alfred/)
