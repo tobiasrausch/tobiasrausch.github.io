@@ -26,6 +26,6 @@ Delly is available as a [Bioconda package](https://anaconda.org/bioconda/delly),
 ## Citation
 
 Tobias Rausch, Thomas Zichner, Andreas Schlattl, Adrian M. Stuetz, Vladimir Benes, Jan O. Korbel.  
-[Delly: Structural variant discovery by integrated paired-end and split-read analysis.](http://bioinformatics.oxfordjournals.org/content/28/18/i333.abstract)
-Bioinformatics 2012 28: i333-i339.
+[Delly: Structural variant discovery by integrated paired-end and split-read analysis.](http://bioinformatics.oxfordjournals.org/content/28/18/i333.abstract)      
+Bioinformatics 2012 28: i333-i339.      
 [https://doi.org/10.1093/bioinformatics/bts378](https://doi.org/10.1093/bioinformatics/bts378)
