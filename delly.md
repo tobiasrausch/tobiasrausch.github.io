@@ -8,8 +8,9 @@ permalink: "/delly/"
    <a href="https://academic.oup.com/bioinformatics/article/28/18/i333/245403/DELLY-structural-variant-discovery-by-integrated">
    <img height="150" src="https://raw.githubusercontent.com/dellytools/assets/master/delly-logo/delly-logo-539x600.png">
    </a>
-   <h1 align="center">Delly: Integrated Structural Variant Discovery</h1>
 </p>
+<h1 align="center">Delly: Integrated Structural Variant Discovery</h1>
+
 
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/delly/README.html)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/downloads.svg)](https://anaconda.org/bioconda/delly)
