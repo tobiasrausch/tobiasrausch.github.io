@@ -10,6 +10,12 @@ permalink: "/alfred/"
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/alfred.svg)](https://github.com/tobiasrausch/alfred/releases)
 
 
-## Alfred
+## Alfred: BAM alignment statistics, feature counting and feature annotation
+
+Alfred is available as a [Bioconda package](https://anaconda.org/bioconda/alfred), as a statically linked binary from the [GitHub release page](https://github.com/tobiasrausch/alfred/releases/) or as a minimal [Docker container](https://hub.docker.com/r/trausch/alfred/). Please have a look at [Alfred's documentation] for any installation or usage questions.
 
 [Source Code](https://github.com/tobiasrausch/alfred/)
+
+[Web Application](https://gear.embl.de/alfred)
+
+[Documentation](https://gear.embl.de/docs/alfred)
