@@ -4,17 +4,12 @@ layout: simple
 permalink: "/alfred/"
 ---
 
-<p align="center">
-   <img width="450" src="https://raw.githubusercontent.com/tobiasrausch/alfred/master/alfred.png">
-   <h1></h1>
-</p>
+<img width="450" src="https://raw.githubusercontent.com/tobiasrausch/alfred/master/alfred.png">
 
-<p align="center">
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/alfred/README.html)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/alfred/badges/downloads.svg)](https://anaconda.org/bioconda/alfred)
 [![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/tobiasrausch/alfred/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/alfred.svg)](https://github.com/tobiasrausch/alfred/releases)
-</p>
 
 ## Alfred: BAM alignment statistics, feature counting and feature annotation
 
