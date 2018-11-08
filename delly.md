@@ -17,7 +17,7 @@ permalink: "/delly/"
 [![GitHub Releases](https://img.shields.io/github/release/dellytools/delly.svg)](https://github.com/dellytools/delly/releases)
 
 
-## Delly: Integrated structural variant prediction method to discover, genotype and visualize genomic rearrangements.
+## Delly: Integrated structural variant discovery
 
 Delly is available as a [Bioconda package](https://anaconda.org/bioconda/delly), as a statically linked binary from the [GitHub release page](https://github.com/dellytools/delly/releases/) or as a minimal [Docker container](https://hub.docker.com/r/dellytools/delly/). Please have a look at [Delly's documentation](https://github.com/dellytools/delly/blob/master/README.md) for any installation or usage questions.
 
@@ -26,5 +26,6 @@ Delly is available as a [Bioconda package](https://anaconda.org/bioconda/delly),
 ## Citation
 
 Tobias Rausch, Thomas Zichner, Andreas Schlattl, Adrian M. Stuetz, Vladimir Benes, Jan O. Korbel.  
-[Delly: structural variant discovery by integrated paired-end and split-read analysis.](http://bioinformatics.oxfordjournals.org/content/28/18/i333.abstract)  
+[Delly: Structural variant discovery by integrated paired-end and split-read analysis.](http://bioinformatics.oxfordjournals.org/content/28/18/i333.abstract)
 Bioinformatics 2012 28: i333-i339.
+[https://doi.org/10.1093/bioinformatics/bts378](https://doi.org/10.1093/bioinformatics/bts378)
