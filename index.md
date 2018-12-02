@@ -37,4 +37,11 @@ title: Tobias Rausch
 
 ---
 
+[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/tobiasrausch/tegua/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/tegua.svg)](https://github.com/tobiasrausch/tegua/releases)
+
+[Tegua](https://github.com/tobiasrausch/tegua/): Structural Variant Discovery using Long Reads
+
+---
+
 A full list of my software projects is available on [GitHub](https://github.com/tobiasrausch/).
