@@ -34,3 +34,7 @@ title: Tobias Rausch
 
 [Tracy](https://github.com/gear-genomics/tracy/): Basecalling, alignment and deconvolution of Sanger Chromatogram trace files.
 
+
+---
+
+A full list of my software projects is available on [GitHub](https://github.com/tobiasrausch/).

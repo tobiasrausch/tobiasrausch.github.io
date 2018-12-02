@@ -4,7 +4,7 @@ layout: default
 permalink: "/software/"
 ---
 
-I love programming and below are some projects I contributed to. A full list of my software projects is on [GitHub][ma].
+
 
 
 ![delly]({{ site.url }}/assets/img/delly.png)  

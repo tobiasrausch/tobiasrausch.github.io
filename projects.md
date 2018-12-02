@@ -14,8 +14,11 @@ The [1000 Genomes Project][gp] created a catalogue of human genetic variation. I
 
 Genomics research is expanding at a breathtaking pace. In 2012, I co-authored my very first [Cancer Genomics paper][ce] with only 3 whole-genome sequencing samples. Only 5 years later, we are analyzing 2,800 Cancer Genomes in the [PCAWG study][pc].
 
+**GEAR: Genome Analysis Server**
+
+[Gear][ge] is a Genome Analysis Server with interactive and efficient web applications for molecular biologists.
+
 ![gear]({{ site.url }}/assets/img/gear-logo.v2.png)  
-**[Gear][ge]** is a Genome Analysis Server with interactive and efficient web applications for molecular biologists
 
 
 [gp]: http://www.internationalgenome.org/ "1000 Genomes Project"
