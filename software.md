@@ -22,8 +22,6 @@ I love programming and below are some projects I contributed to. A full list of 
 
 
 
-![gear]({{ site.url }}/assets/img/gear-logo.v2.png)  
-**[Gear][ge]**: Genome Analysis Server with interactive and efficient web applications for molecular biologists
 
 
 
@@ -32,4 +30,4 @@ I love programming and below are some projects I contributed to. A full list of 
 [al]: https://github.com/tobiasrausch/alfred "Alfred GitHub Repository"
 [ma]: https://github.com/tobiasrausch/ "My GitHub Page"
 [in]: http://gear.embl.de/indigo "InDel Discovery in Sanger Traces"
-[ge]: http://gear.embl.de/ "GEAR: Genome Analysis Server"
+
