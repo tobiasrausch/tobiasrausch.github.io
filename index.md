@@ -46,7 +46,7 @@ title: Tobias Rausch
 
 ---
 
-## [GEAR:](https://gear.embl.de) Web Applications for Molecular Biologists ([gear.embl.de](https://gear.embl.de))
+## Web Applications for Molecular Biologists ([gear.embl.de](https://gear.embl.de))
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/gear-genomics/indigo.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/gear-genomics/indigo/network/)
@@ -61,6 +61,14 @@ title: Tobias Rausch
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/ATACseq.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/network/)
 
 [ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational Workflow to analyze ATAC-Seq data.
+
+---
+
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/nRex.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/nRex/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/nRex.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/nRex/network/)
+
+[DNA Variant Calling](https://github.com/tobiasrausch/nRex/): Computational Workflow to analyze DNA whole-genome data and targeted NGS data.
+
 
 ---
 
