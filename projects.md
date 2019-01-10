@@ -28,3 +28,10 @@ permalink: "/projects/"
 
 [Gear](https://gear.embl.de/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
 
+---
+
+## Publications
+
+A full list of co-authored publications is available on [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ).
+
+Publications and peer review statistics are also available on [publons](https://publons.com/researcher/1172942/tobias-rausch/).
