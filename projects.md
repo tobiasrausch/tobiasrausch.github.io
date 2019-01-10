@@ -6,6 +6,8 @@ permalink: "/projects/"
 
 ## Population Genomics
 
+[![DOI:10.1038/nature15394](https://zenodo.org/badge/DOI/10.1038/nature15394.svg)](https://doi.org/10.1038/nature15394)
+
 [1000 Genomes Structural Variant Calling](https://www.nature.com/articles/nature15394): A catalogue of human genetic structural variation.
 
 ---
