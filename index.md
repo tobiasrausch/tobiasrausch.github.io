@@ -11,6 +11,8 @@ title: Tobias Rausch
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/downloads.svg)](https://anaconda.org/bioconda/delly)
 [![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/dellytools/delly/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/dellytools/delly.svg)](https://github.com/dellytools/delly/releases)
+[![DOI:10.1093/bioinformatics/bts378](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bts378.svg)]( https://doi.org/10.1093/bioinformatics/bts378)
+
 
 [Delly](https://github.com/dellytools/delly/): Structural variant discovery by integrated paired-end and split-read analysis.
 
