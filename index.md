@@ -3,6 +3,8 @@ layout: default
 title: Tobias Rausch
 ---
 
+## Methods for Computational Genomics
+
 ---
 
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/delly/README.html)
@@ -43,5 +45,15 @@ title: Tobias Rausch
 [Tegua](https://github.com/tobiasrausch/tegua/): Structural Variant Discovery using Long Reads
 
 ---
+
+## Analysis Pipelines for Computational Genomics
+
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/ATACseq.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/stargazers/)
+
+[ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational Workflow to analyze ATAC-Seq data.
+
+---
+
+## GitHub Code Repositories
 
 A full list of my software projects is available on [GitHub](https://github.com/tobiasrausch/).
