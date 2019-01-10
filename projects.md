@@ -18,6 +18,8 @@ permalink: "/projects/"
 
 ## Cancer Genomics
 
+[![DOI:10.1016/j.cell.2011.12.013](https://zenodo.org/badge/DOI/10.1016/j.cell.2011.12.013.svg)](https://doi.org/10.1016/j.cell.2011.12.013)
+
 [Chromothripsis in Medulloblastoma](https://www.sciencedirect.com/science/article/pii/S0092867411015169): Genome sequencing of pediatric medulloblastoma samples to understand complex, somatic DNA rearrangements.
 
 ---
@@ -31,6 +33,8 @@ permalink: "/projects/"
 ---
 
 ## Rare Diseases
+
+[![DOI:10.1016/j.jaci.2013.02.012](https://zenodo.org/badge/DOI/10.1016/j.jaci.2013.02.012.svg)](https://doi.org/10.1016/j.jaci.2013.02.012)
 
 [Severe combined immunodeficiency](https://www.sciencedirect.com/science/article/pii/S0091674913003217): CARD11 inactivation leads to severe combined immunodeficiency.
 
