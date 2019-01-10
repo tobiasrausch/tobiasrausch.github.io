@@ -46,9 +46,19 @@ title: Tobias Rausch
 
 ---
 
+## [GEAR:](https://gear.embl.de) Web Applications for Molecular Biologists ([gear.embl.de](https://gear.embl.de))
+
+[![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/gear-genomics/indigo.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/gear-genomics/indigo/network/)
+
+[Indigo](https://gear.embl.de/indigo/): Variant Discovery in Chromatogram traces obtained from Sanger sequencing of PCR products
+
+---
+
 ## Analysis Pipelines for Computational Genomics
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/ATACseq.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/ATACseq.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/network/)
 
 [ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational Workflow to analyze ATAC-Seq data.
 
