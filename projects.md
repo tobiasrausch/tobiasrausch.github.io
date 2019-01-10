@@ -20,7 +20,17 @@ permalink: "/projects/"
 
 ---
 
+[T-cell acute lymphoblastic leukemia](http://www.haematologica.org/content/early/2015/08/17/haematol.2015.129692): Pediatric T-cell acute lymphoblastic leukemia evolves into relapse by clonal selection and acquisition of mutations.
+
+---
+
 [Pan-Cancer Analysis](https://www.biorxiv.org/content/early/2017/11/01/208330): Germline determinants of the somatic mutation landscape in 2,642 cancer genomes.
+
+---
+
+## Rare Diseases
+
+[Severe combined immunodeficiency](https://www.sciencedirect.com/science/article/pii/S0091674913003217): CARD11 inactivation leads to severe combined immunodeficiency.
 
 ---
 
