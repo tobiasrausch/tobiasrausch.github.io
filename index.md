@@ -55,6 +55,13 @@ title: Tobias Rausch
 
 ---
 
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/alfred.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/alfred/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/alfred.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/alfred/network/)
+
+[Alfred](https://gear.embl.de/alfred/): Interactive, multi-sample and read-group aware quality control browser for NGS data.
+
+---
+
 ## Analysis Pipelines for Computational Genomics
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/ATACseq.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/stargazers/)
