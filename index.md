@@ -48,6 +48,13 @@ title: Tobias Rausch
 
 ---
 
+[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/gear-genomics/dicey/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/gear-genomics/dicey.svg)](https://github.com/gear-genomics/dicey/releases)
+
+[Dicey](https://github.com/gear-genomics/dicey/): In-silico PCR and variant primer design
+
+---
+
 ## Web Applications for Molecular Biologists ([gear.embl.de](https://gear.embl.de))
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
