@@ -54,6 +54,20 @@ permalink: "/projects/"
 
 ---
 
+## SeqAn
+
+[![DOI:10.1186/1471-2105-9-11](https://zenodo.org/badge/DOI/10.1186/1471-2105-9-11.svg)](https://doi.org/10.1186/1471-2105-9-11)
+
+[SeqAn](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-11): An efficient, generic C++ library for sequence analysis.
+
+---
+
+[![DOI:10.1093/bioinformatics/btn281](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btn281.svg)](https://doi.org/10.1093/bioinformatics/btn281)
+
+[Multiple Sequence Alignment](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btn281): Segment-based multiple sequence alignment using SeqAn.
+
+---
+
 ## Publications
 
 A full list of co-authored publications is available on [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ).
