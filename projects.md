@@ -26,7 +26,13 @@ permalink: "/projects/"
 
 [![DOI:10.3324/haematol.2015.129692](https://zenodo.org/badge/DOI/10.3324/haematol.2015.12969.svg)](https://doi.org/10.3324/haematol.2015.129692)
 
-[T-cell acute lymphoblastic leukemia](http://www.haematologica.org/content/early/2015/08/17/haematol.2015.129692): Pediatric T-cell acute lymphoblastic leukemia evolves into relapse by clonal selection and acquisition of mutations.
+[Relapses of T-cell acute lymphoblastic leukemia](http://www.haematologica.org/content/early/2015/08/17/haematol.2015.129692): Pediatric T-cell acute lymphoblastic leukemia evolves into relapse by clonal selection and acquisition of mutations.
+
+---
+
+[![DOI:10.3324/haematol.2014.104992](https://zenodo.org/badge/DOI/10.3324/haematol.2014.104992.svg)](https://doi.org/10.3324/haematol.2014.104992)
+
+[Activating STAT5B N642H mutations in T-cell acute lymphoblastic leukemia](http://www.haematologica.org/content/99/10/e188.long): The activating STAT5B N642H mutation is a common abnormality in pediatric T-cell acute lymphoblastic leukemia and confers a higher risk of relapse.
 
 ---
 
