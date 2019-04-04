@@ -16,7 +16,7 @@ permalink: "/course/"
 
 **Connecting via SSH**
 
-ssh -Y -i training.pem training@<amazon-ip>
+ssh -Y -i training.pem training@amazon-ip-here
 
 **Connecting via Browser and SSH Plugin**
 
