@@ -11,7 +11,7 @@ permalink: "/course/"
 
 **Connecting via the Web Browser**
 
-[AmazonNode](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-74-115.eu-central-1.compute.amazonaws.com:22)
+[Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-59-235-174.eu-central-1.compute.amazonaws.com:22)
 
 
 **Connecting via SSH**
