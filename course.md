@@ -11,7 +11,11 @@ permalink: "/course/"
 
 **Connecting via the Web Browser**
 
-[Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-52-59-235-174.eu-central-1.compute.amazonaws.com:22)
+[Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-116-251.eu-central-1.compute.amazonaws.com:22)
+[Participant2](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-195-117-54.eu-central-1.compute.amazonaws.com:22)
+[Participant3](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-130-1.eu-central-1.compute.amazonaws.com:22)
+[Participant4](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-184-100-243.eu-central-1.compute.amazonaws.com:22)
+[Participant5](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-195-35-253.eu-central-1.compute.amazonaws.com:22)
 
 
 **Connecting via SSH**
