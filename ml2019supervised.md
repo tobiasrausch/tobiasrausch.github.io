@@ -1,8 +1,8 @@
 ---
 title: Courses
 layout: plain
-permalink: "/courses/ml2019/dataExploration/"
+permalink: "/courses/ml2019/supervised/"
 ---
 
-{% include dataExploration.html %}
+{% include supervised.html %}
 
