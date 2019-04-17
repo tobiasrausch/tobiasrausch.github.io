@@ -1,5 +1,5 @@
 ---
-1;95;0ctitle: Course
+title: Course
 layout: default
 permalink: "/course/"
 ---

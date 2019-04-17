@@ -1,5 +1,8 @@
 - title: "Projects"
   url: "/projects"
 
+- title: "Courses"
+  url: "/courses"
+
 - title: "About me"
   url: "/about"
