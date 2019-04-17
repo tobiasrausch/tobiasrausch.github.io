@@ -17,7 +17,7 @@ A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/e
 
 * [Variant Calling in NGS data](https://tobiasrausch.gitbooks.io/variant-calling/content/)
 
-A machine learning tutorial in R Statistics (Contributors: [Markus Hsi-Yang Fritz](https://github.com/mhyfritz) and [Tobias Rausch](https://github.com/tobiasrausch). Work-in-progress, current chapters:
+A machine learning tutorial in R Statistics (Contributors: [Markus Hsi-Yang Fritz](https://github.com/mhyfritz) and [Tobias Rausch](https://github.com/tobiasrausch)). Work-in-progress, current chapters:
 
 * [Data Exploration]({{ site.url }}/courses/ml2019/dataExploration.html)
 * [Supervised Learning]({{ site.url }}/courses/ml2019/supervised.html)
