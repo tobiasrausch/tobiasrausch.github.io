@@ -12,7 +12,9 @@ permalink: "/projects/"
 
 ---
 
-[Haplotype-resolved Stuctural Variant Calling](https://www.biorxiv.org/content/early/2017/09/23/193144): Multi-platform discovery of haplotype-resolved structural variation in human genomes.
+[![DOI:10.1038/s41467-018-08148-z](https://zenodo.org/badge/DOI/10.1038/s41467-018-08148-z.svg)](https://doi.org/10.1038/s41467-018-08148-z)
+
+[Haplotype-resolved Stuctural Variant Calling](https://www.nature.com/articles/s41467-018-08148-z): Multi-platform discovery of haplotype-resolved structural variation in human genomes.
 
 ---
 
