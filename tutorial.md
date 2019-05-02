@@ -27,8 +27,6 @@ permalink: "/tutorial/"
 
 [Participant8](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-3-121-224-153.eu-central-1.compute.amazonaws.com:22)
 
-[Tobias](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-54-93-57-204.eu-central-1.compute.amazonaws.com:22)
-
 **Connecting via SSH**
 
 ssh -Y -i training.pem training@amazon-ip-here
