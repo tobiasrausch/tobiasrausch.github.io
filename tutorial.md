@@ -11,7 +11,7 @@ permalink: "/tutorial/"
 
 **Connecting via the Web Browser**
 
-[Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-18-185-116-251.eu-central-1.compute.amazonaws.com:22)
+[Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-3-120-132-246.eu-central-1.compute.amazonaws.com:22)
 
 **Connecting via SSH**
 
