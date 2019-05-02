@@ -10,5 +10,5 @@ permalink: "/workshop/"
 
 **Compute Nodes**
 
-[Participant1](ec2-54-93-126-143.eu-central-1.compute.amazonaws.com:8787)
+[Participant1](http://ec2-35-159-51-138.eu-central-1.compute.amazonaws.com:8787)
 
