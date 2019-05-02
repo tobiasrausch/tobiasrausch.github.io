@@ -13,6 +13,8 @@ permalink: "/tutorial/"
 
 [Participant1](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-3-120-132-246.eu-central-1.compute.amazonaws.com:22)
 
+[Participant2](chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#training@ec2-3-120-209-223.eu-central-1.compute.amazonaws.com:22)
+
 **Connecting via SSH**
 
 ssh -Y -i training.pem training@amazon-ip-here
