@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ATAC-Seq Tutorial</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#data-set"><i class="fa fa-check"></i><b>1.1</b> Data Set</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#prepare-the-input-count-matrix"><i class="fa fa-check"></i><b>1.2</b> Prepare the input count matrix</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#issuesquestions"><i class="fa fa-check"></i><b>1.3</b> Issues/Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html"><i class="fa fa-check"></i><b>2</b> ATAC-Seq Data Analysis</a><ul>
+<li class="chapter" data-level="2.1" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#methods"><i class="fa fa-check"></i><b>2.1</b> Methods</a></li>
+<li class="chapter" data-level="2.2" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#r-libraries"><i class="fa fa-check"></i><b>2.2</b> R libraries</a></li>
+<li class="chapter" data-level="2.3" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#load-the-atac-seq-count-matrix"><i class="fa fa-check"></i><b>2.3</b> Load the ATAC-Seq count matrix</a></li>
+<li class="chapter" data-level="2.4" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#removing-missing-peaks"><i class="fa fa-check"></i><b>2.4</b> Removing missing peaks</a></li>
+<li class="chapter" data-level="2.5" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#data-exploration"><i class="fa fa-check"></i><b>2.5</b> Data Exploration</a></li>
+<li class="chapter" data-level="2.6" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#data-normalization"><i class="fa fa-check"></i><b>2.6</b> Data normalization</a></li>
+<li class="chapter" data-level="2.7" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#data-visualization"><i class="fa fa-check"></i><b>2.7</b> Data visualization</a></li>
+<li class="chapter" data-level="2.8" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#principal-component-analysis-pca"><i class="fa fa-check"></i><b>2.8</b> Principal component analysis (PCA)</a></li>
+<li class="chapter" data-level="2.9" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#annotate-genomic-context"><i class="fa fa-check"></i><b>2.9</b> Annotate genomic context</a></li>
+<li class="chapter" data-level="2.10" data-path="atac-seq-data-analysis.html"><a href="atac-seq-data-analysis.html#differential-peak-calling"><i class="fa fa-check"></i><b>2.10</b> Differential peak calling</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="atac-seq-data-analysis" class="section level1">
+<h1><span class="header-section-number">2</span> ATAC-Seq Data Analysis</h1>
+<div id="methods" class="section level2">
+<h2><span class="header-section-number">2.1</span> Methods</h2>
+<p>In this tutorial we will explore methods for measuring the central value:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mean">Mean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Median">Median</a></li>
+</ul>
+<p>Methods for measuring the variance or dispersion of the data:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Standard_deviation">Standard Deviation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Range_(statistics)">Range</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Quartile">Quartiles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interquartile_range">Inter Quartile Range (IQR)</a></li>
+</ul>
+<p>Methods for data exploration and visualization:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Principal_component_analysis">Principal component analysis</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Box_plot">Box plots</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Histogram">Histogram</a></li>
+</ul>
+<p>Methods for genomic count data normalization and differential peak calling:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Data_transformation_(statistics)">Data transformation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Variance-stabilizing_transformation">Variance stabilizing transformation</a></li>
+<li><a href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html">DESeq2</a></li>
+</ul>
+<p>Methods for gene set and pathway enrichment and visualizing differential peak calling results:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Heat_map">Heat map</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis">Gene set enrichment analysis</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pathway_analysis">Pathway analysis</a></li>
+</ul>
+</div>
+<div id="r-libraries" class="section level2">
+<h2><span class="header-section-number">2.2</span> R libraries</h2>
+<p>We need a couple of libraries for the exercises. Let’s load them all upfront:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(reshape2)
+<span class="kw">library</span>(pander)
+<span class="kw">library</span>(Hmisc)
+<span class="kw">library</span>(pastecs)
+<span class="kw">library</span>(DESeq2)
+<span class="kw">library</span>(ChIPseeker)
+<span class="kw">library</span>(TxDb.Hsapiens.UCSC.hg19.knownGene)
+<span class="kw">library</span>(clusterProfiler)
+<span class="kw">library</span>(org.Hs.eg.db)
+<span class="kw">library</span>(ReactomePA)
+<span class="kw">library</span>(pheatmap)</code></pre></div>
+</div>
+<div id="load-the-atac-seq-count-matrix" class="section level2">
+<h2><span class="header-section-number">2.3</span> Load the ATAC-Seq count matrix</h2>
+<p>Let’s load the count matrix and the sample information with the blood type and donor.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df =<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;atac.data.gz&quot;</span>, <span class="dt">header=</span>T)
+si =<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;blood.samples&quot;</span>, <span class="dt">header=</span>F)
+<span class="kw">colnames</span>(si) =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;sample&quot;</span>, <span class="st">&quot;celltype&quot;</span>, <span class="st">&quot;donor&quot;</span>)
+<span class="kw">rownames</span>(si) =<span class="st"> </span>si<span class="op">$</span>sample
+si<span class="op">$</span>donor =<span class="st"> </span><span class="kw">factor</span>(si<span class="op">$</span>donor)
+<span class="kw">pander</span>(<span class="kw">dim</span>(df), <span class="st">&quot;Data dimensions&quot;</span>)</code></pre></div>
+<p><em>590650</em> and <em>14</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">head</span>(df))</code></pre></div>
+<table style="width:89%;">
+<caption>Table continues below</caption>
+<colgroup>
+<col width="9%" />
+<col width="12%" />
+<col width="12%" />
+<col width="16%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Chr</th>
+<th align="center">Start</th>
+<th align="center">End</th>
+<th align="center">Bcell_13A</th>
+<th align="center">CD4_9A</th>
+<th align="center">CD4_9B</th>
+<th align="center">CD8_10B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">chr1</td>
+<td align="center">10025</td>
+<td align="center">10525</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">chr1</td>
+<td align="center">13252</td>
+<td align="center">13752</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">chr1</td>
+<td align="center">16019</td>
+<td align="center">16519</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">chr1</td>
+<td align="center">96376</td>
+<td align="center">96876</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">chr1</td>
+<td align="center">115440</td>
+<td align="center">115940</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">chr1</td>
+<td align="center">235393</td>
+<td align="center">235893</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="24%" />
+<col width="24%" />
+<col width="24%" />
+<col width="11%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Erythroblast_15A</th>
+<th align="center">Erythroblast_15B</th>
+<th align="center">Erythroblast_15C</th>
+<th align="center">NK_11A</th>
+<th align="center">Nkcell_11B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<table style="width:29%;">
+<colgroup>
+<col width="16%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Bcell_13B</th>
+<th align="center">CD8_10A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">head</span>(si))</code></pre></div>
+<table style="width:64%;">
+<colgroup>
+<col width="22%" />
+<col width="16%" />
+<col width="15%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">sample</th>
+<th align="center">celltype</th>
+<th align="center">donor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>Bcell_13A</strong></td>
+<td align="center">Bcell_13A</td>
+<td align="center">Bcell</td>
+<td align="center">5483</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Bcell_13B</strong></td>
+<td align="center">Bcell_13B</td>
+<td align="center">Bcell</td>
+<td align="center">5483</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>CD4_9A</strong></td>
+<td align="center">CD4_9A</td>
+<td align="center">CD4Tcell</td>
+<td align="center">5483</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>CD4_9B</strong></td>
+<td align="center">CD4_9B</td>
+<td align="center">CD4Tcell</td>
+<td align="center">5483</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>CD8_10A</strong></td>
+<td align="center">CD8_10A</td>
+<td align="center">CD8Tcell</td>
+<td align="center">5483</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>CD8_10B</strong></td>
+<td align="center">CD8_10B</td>
+<td align="center">CD8Tcell</td>
+<td align="center">5483</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">summary</span>(si))</code></pre></div>
+<pre><code>##        sample      celltype  donor   
+##  Bcell_13A:1   Bcell   :2   5483:11  
+##  Bcell_13B:1   CD4Tcell:2            
+##  CD4_9A   :1   CD8Tcell:2            
+##  CD4_9B   :1   Ery     :3            
+##  CD8_10A  :1   NKcell  :2            
+##  CD8_10B  :1                         
+##  (Other)  :5</code></pre>
+</div>
+<div id="removing-missing-peaks" class="section level2">
+<h2><span class="header-section-number">2.4</span> Removing missing peaks</h2>
+<p>The original count matrix had many more samples and thus, we have now a number of peaks in our matrix that are actually not present anymore. Let’s remove all the rows where not a single sample has more than 50 reads.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df =<span class="st"> </span>df[<span class="kw">apply</span>(df[,<span class="dv">4</span><span class="op">:</span><span class="kw">ncol</span>(df)], <span class="dv">1</span>, max) <span class="op">&gt;</span><span class="st"> </span><span class="dv">50</span>,]
+<span class="kw">pander</span>(<span class="kw">dim</span>(df), <span class="st">&quot;Data dimensions&quot;</span>)</code></pre></div>
+<p><em>57891</em> and <em>14</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cm =<span class="st"> </span>df[,<span class="dv">4</span><span class="op">:</span><span class="kw">ncol</span>(df)]
+<span class="kw">pander</span>(<span class="kw">quantile</span>(<span class="kw">rowSums</span>(cm)))</code></pre></div>
+<table style="width:42%;">
+<colgroup>
+<col width="6%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">0%</th>
+<th align="center">25%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">71</td>
+<td align="center">260</td>
+<td align="center">444</td>
+<td align="center">944</td>
+<td align="center">16021</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">quantile</span>(<span class="kw">rowMeans</span>(cm)))</code></pre></div>
+<table style="width:56%;">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">0%</th>
+<th align="center">25%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">6.455</td>
+<td align="center">23.64</td>
+<td align="center">40.36</td>
+<td align="center">85.82</td>
+<td align="center">1456</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">quantile</span>(<span class="kw">apply</span>(cm, <span class="dv">1</span>, max)))</code></pre></div>
+<table style="width:40%;">
+<colgroup>
+<col width="6%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">0%</th>
+<th align="center">25%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">51</td>
+<td align="center">71</td>
+<td align="center">111</td>
+<td align="center">209</td>
+<td align="center">2471</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="data-exploration" class="section level2">
+<h2><span class="header-section-number">2.5</span> Data Exploration</h2>
+<p>With the cleaned data, we can of course now compute simple statistics for each sample like the mean read count and standard deviation of counts across peaks. Box plots are useful for summarizing the distribution of read counts.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">mean</span>(df<span class="op">$</span>NK_11A))</code></pre></div>
+<pre><code>## [1] 89.05225</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">sd</span>(df<span class="op">$</span>NK_11A))</code></pre></div>
+<pre><code>## [1] 138.2255</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sim =<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">1000</span>, <span class="dt">mean=</span><span class="dv">100</span>, <span class="dt">sd=</span><span class="dv">10</span>)
+<span class="kw">boxplot</span>(sim)</code></pre></div>
+<p><img src="atac_files/figure-html/dataOverview-1.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(sim)</code></pre></div>
+<p><img src="atac_files/figure-html/dataOverview-2.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">quantile</span>(sim))</code></pre></div>
+<table style="width:56%;">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">0%</th>
+<th align="center">25%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">68.79</td>
+<td align="center">92.95</td>
+<td align="center">99.63</td>
+<td align="center">106.3</td>
+<td align="center">134.2</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(df<span class="op">$</span>NK_11A)</code></pre></div>
+<p><img src="atac_files/figure-html/dataOverview-3.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(df<span class="op">$</span>NK_11A)</code></pre></div>
+<p><img src="atac_files/figure-html/dataOverview-4.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pander</span>(<span class="kw">quantile</span>(df<span class="op">$</span>NK_11A))</code></pre></div>
+<table style="width:40%;">
+<colgroup>
+<col width="6%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">0%</th>
+<th align="center">25%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">12</td>
+<td align="center">43</td>
+<td align="center">102</td>
+<td align="center">2184</td>
+</tr>
+</tbody>
+</table>
+<p>A common technique for labelling outliers uses the 25% and 75% quantiles.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pw =<span class="st"> </span>df<span class="op">$</span>NK_11A
+uq =<span class="st"> </span><span class="kw">quantile</span>(pw, <span class="fl">0.75</span>)
+<span class="kw">print</span>(<span class="kw">mean</span>(pw <span class="op">&gt;</span><span class="st"> </span><span class="fl">1.5</span> <span class="op">*</span><span class="st"> </span>uq))</code></pre></div>
+<pre><code>## [1] 0.1635487</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">iqr =<span class="st"> </span><span class="kw">IQR</span>(pw)
+<span class="kw">print</span>(<span class="kw">mean</span>(pw <span class="op">&gt;</span><span class="st"> </span><span class="dv">3</span> <span class="op">*</span><span class="st"> </span>iqr))</code></pre></div>
+<pre><code>## [1] 0.07711043</code></pre>
+<p>We obviously have a very skewed distribution with a long tail. This is very common in Genomics and the standard approach to account for such a skewed distribution is some kind of log-transformation of the count data.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pw =<span class="st"> </span><span class="kw">log</span>(df<span class="op">$</span>NK_11A <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)
+<span class="kw">boxplot</span>(pw)</code></pre></div>
+<p><img src="atac_files/figure-html/logTransform-1.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(pw)</code></pre></div>
+<p><img src="atac_files/figure-html/logTransform-2.svg" width="672" /></p>
+<p>The other major problem in genomic count data sets is that they often show <a href="https://en.wikipedia.org/wiki/Heteroscedasticity">heteroscedasticity</a> which means in our case that different peaks show different levels of variabilities in the number of reads. This is a major problem for differential peak calling.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">rowsummary =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">rowmeans =</span> <span class="kw">apply</span>(df[, <span class="dv">4</span><span class="op">:</span><span class="kw">ncol</span>(df)], <span class="dv">1</span>, mean), <span class="dt">rowsds =</span> <span class="kw">apply</span>(df[, <span class="dv">4</span><span class="op">:</span><span class="kw">ncol</span>(df)], <span class="dv">1</span>, sd))
+<span class="kw">ggplot</span>(<span class="dt">data=</span>rowsummary, <span class="kw">aes</span>(<span class="dt">x=</span>rowmeans, <span class="dt">y=</span>rowsds)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Peak means&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Peak SDs&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/heteroscedasticity-1.svg" width="672" /></p>
+</div>
+<div id="data-normalization" class="section level2">
+<h2><span class="header-section-number">2.6</span> Data normalization</h2>
+<p>Extensions of the simple log-transformation such as rlog or the <a href="https://en.wikipedia.org/wiki/Variance-stabilizing_transformation">variance stabilizing transformation</a> have been developed and are often applied to count data sets. <a href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html">DESeq2</a> also provides a method to compute normalized counts that account for library size and variance-mean dependencies.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">counts =<span class="st"> </span>df[,<span class="dv">4</span><span class="op">:</span><span class="kw">ncol</span>(df)]
+dds =<span class="st"> </span><span class="kw">DESeqDataSetFromMatrix</span>(<span class="dt">countData =</span> counts[,<span class="kw">order</span>(<span class="kw">colnames</span>(counts))], <span class="dt">colData =</span> si, <span class="dt">design =</span> <span class="op">~</span><span class="st"> </span>celltype)
+dds =<span class="st"> </span><span class="kw">DESeq</span>(dds)
+cm =<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">counts</span>(dds, <span class="dt">normalized=</span><span class="ot">TRUE</span>))
+<span class="kw">rownames</span>(cm) =<span class="st"> </span><span class="kw">paste0</span>(df<span class="op">$</span>Chr, <span class="st">&#39;_&#39;</span>, df<span class="op">$</span>Start, <span class="st">&#39;_&#39;</span>, df<span class="op">$</span>End)</code></pre></div>
+</div>
+<div id="data-visualization" class="section level2">
+<h2><span class="header-section-number">2.7</span> Data visualization</h2>
+<p>Let’s explore the normalized counts.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lf =<span class="st"> </span><span class="kw">melt</span>(cm, <span class="dt">id.vars=</span><span class="kw">c</span>())
+<span class="kw">pander</span>(<span class="kw">head</span>(lf))</code></pre></div>
+<table style="width:26%;">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">variable</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Bcell_13A</td>
+<td align="center">120.3</td>
+</tr>
+<tr class="even">
+<td align="center">Bcell_13A</td>
+<td align="center">28.59</td>
+</tr>
+<tr class="odd">
+<td align="center">Bcell_13A</td>
+<td align="center">36.76</td>
+</tr>
+<tr class="even">
+<td align="center">Bcell_13A</td>
+<td align="center">36.31</td>
+</tr>
+<tr class="odd">
+<td align="center">Bcell_13A</td>
+<td align="center">24.51</td>
+</tr>
+<tr class="even">
+<td align="center">Bcell_13A</td>
+<td align="center">41.3</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data=</span>lf, <span class="kw">aes</span>(<span class="dt">x=</span>variable, <span class="dt">y=</span>value)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">group=</span>variable)) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Sample&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Normalized Count&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">coord_flip</span>()</code></pre></div>
+<p><img src="atac_files/figure-html/dataExploration-1.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data=</span>lf, <span class="kw">aes</span>(<span class="dt">x=</span>value)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_freqpoly</span>(<span class="kw">aes</span>(<span class="dt">group=</span>variable, <span class="dt">color=</span>variable), <span class="dt">bins=</span><span class="dv">30</span>) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Sample&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Normalized Count&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/dataExploration-2.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">libsize =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">sizeFactors</span>(dds), <span class="dt">y=</span><span class="kw">colSums</span>(<span class="kw">assay</span>(dds)))
+<span class="kw">ggplot</span>(<span class="dt">data=</span>libsize, <span class="kw">aes</span>(<span class="dt">x=</span>x, <span class="dt">y=</span>y)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Estimated size factor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Library size&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/dataExploration-3.svg" width="672" /></p>
+</div>
+<div id="principal-component-analysis-pca" class="section level2">
+<h2><span class="header-section-number">2.8</span> Principal component analysis (PCA)</h2>
+<p>Let’s do a PCA on the normalized counts and project the cell-type information onto the PCA plot.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pca =<span class="st"> </span><span class="kw">prcomp</span>(<span class="kw">t</span>(cm))
+<span class="kw">print</span>(<span class="kw">summary</span>(pca))</code></pre></div>
+<pre><code>## Importance of components:
+##                              PC1       PC2       PC3       PC4       PC5
+## Standard deviation     7401.6259 4460.2806 3302.6565 2.011e+03 1.698e+03
+## Proportion of Variance    0.5654    0.2053    0.1126 4.175e-02 2.977e-02
+## Cumulative Proportion     0.5654    0.7708    0.8833 9.251e-01 9.549e-01
+##                              PC6       PC7       PC8       PC9      PC10
+## Standard deviation     1.602e+03 837.51387 638.98215 610.83234 567.93309
+## Proportion of Variance 2.649e-02   0.00724   0.00421   0.00385   0.00333
+## Cumulative Proportion  9.814e-01   0.98861   0.99282   0.99667   1.00000
+##                             PC11
+## Standard deviation     2.079e-11
+## Proportion of Variance 0.000e+00
+## Cumulative Proportion  1.000e+00</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pcaData =<span class="st"> </span><span class="kw">as.data.frame</span>(pca<span class="op">$</span>x)
+pcaData<span class="op">$</span>sample=<span class="kw">rownames</span>(pcaData)
+pcaData=<span class="kw">merge</span>(pcaData, si)
+percentVar =<span class="st"> </span><span class="kw">round</span>(<span class="dv">100</span> <span class="op">*</span><span class="st"> </span>(pca<span class="op">$</span>sdev<span class="op">^</span><span class="dv">2</span> <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>( pca<span class="op">$</span>sdev<span class="op">^</span><span class="dv">2</span> ) ))
+p=<span class="kw">ggplot</span>(<span class="dt">data=</span>pcaData, <span class="kw">aes</span>(<span class="dt">x =</span> PC1, <span class="dt">y =</span> PC2, <span class="dt">color=</span>celltype)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">3</span>)
+p=p<span class="op">+</span><span class="kw">xlab</span>(<span class="kw">paste0</span>(<span class="st">&quot;PC1: &quot;</span>, percentVar[<span class="dv">1</span>], <span class="st">&quot;% variance&quot;</span>))
+p=p<span class="op">+</span><span class="kw">ylab</span>(<span class="kw">paste0</span>(<span class="st">&quot;PC2: &quot;</span>, percentVar[<span class="dv">2</span>], <span class="st">&quot;% variance&quot;</span>))
+<span class="kw">print</span>(p)</code></pre></div>
+<p><img src="atac_files/figure-html/pca-1.svg" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">q=<span class="kw">ggplot</span>(<span class="dt">data=</span>pcaData, <span class="kw">aes</span>(<span class="dt">x =</span> PC3, <span class="dt">y =</span> PC4, <span class="dt">color=</span>celltype)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">3</span>)
+q=q<span class="op">+</span><span class="kw">xlab</span>(<span class="kw">paste0</span>(<span class="st">&quot;PC3: &quot;</span>, percentVar[<span class="dv">3</span>], <span class="st">&quot;% variance&quot;</span>))
+q=q<span class="op">+</span><span class="kw">ylab</span>(<span class="kw">paste0</span>(<span class="st">&quot;PC4: &quot;</span>, percentVar[<span class="dv">4</span>], <span class="st">&quot;% variance&quot;</span>))
+<span class="kw">print</span>(q)</code></pre></div>
+<p><img src="atac_files/figure-html/pca-2.svg" width="672" /></p>
+<p>We can also check the proportion of variance explained by each PC.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">varexp =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">x=</span><span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(percentVar), <span class="dt">y=</span>percentVar)
+varexp<span class="op">$</span>x =<span class="st"> </span><span class="kw">factor</span>(varexp<span class="op">$</span>x)
+<span class="kw">ggplot</span>(<span class="dt">data=</span>varexp, <span class="kw">aes</span>(<span class="dt">x=</span>x, <span class="dt">y=</span>y)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&quot;identity&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Principal Component&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Proportion of variation (%)&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/proportionVariation-1.svg" width="672" /></p>
+<p>Lastly we can inspect the loadings for each PC. That is we can investigate which peaks contribute most to the separation of the individual cell types.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">loadings =<span class="st"> </span><span class="kw">abs</span>(pca<span class="op">$</span>rotation)
+contribution =<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">sweep</span>(loadings, <span class="dv">2</span>, <span class="kw">colSums</span>(loadings), <span class="st">&quot;/&quot;</span>))
+contribution =<span class="st"> </span>contribution[<span class="kw">with</span>(contribution, <span class="kw">order</span>(<span class="op">-</span>PC1)),]
+<span class="kw">pander</span>(<span class="kw">head</span>(contribution))</code></pre></div>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="39%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">PC1</th>
+<th align="center">PC2</th>
+<th align="center">PC3</th>
+<th align="center">PC4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>chr12_92987578_92988078</strong></td>
+<td align="center">0.0004424</td>
+<td align="center">0.0001124</td>
+<td align="center">1.766e-05</td>
+<td align="center">7.004e-05</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr1_224691015_224691515</strong></td>
+<td align="center">0.0003718</td>
+<td align="center">0.0001519</td>
+<td align="center">3.07e-05</td>
+<td align="center">0.0002056</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr8_38795902_38796402</strong></td>
+<td align="center">0.0003584</td>
+<td align="center">0.0003164</td>
+<td align="center">0.0001248</td>
+<td align="center">5.385e-05</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr12_92270808_92271308</strong></td>
+<td align="center">0.0003584</td>
+<td align="center">0.0002103</td>
+<td align="center">5.986e-05</td>
+<td align="center">9.303e-06</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr12_51295467_51295967</strong></td>
+<td align="center">0.0003429</td>
+<td align="center">0.0001555</td>
+<td align="center">8.909e-06</td>
+<td align="center">9.567e-06</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr15_74902825_74903325</strong></td>
+<td align="center">0.0003399</td>
+<td align="center">0.0001579</td>
+<td align="center">9.641e-06</td>
+<td align="center">3.776e-06</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="39%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">PC5</th>
+<th align="center">PC6</th>
+<th align="center">PC7</th>
+<th align="center">PC8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>chr12_92987578_92988078</strong></td>
+<td align="center">1.955e-05</td>
+<td align="center">5.95e-05</td>
+<td align="center">4.679e-05</td>
+<td align="center">0.0001663</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr1_224691015_224691515</strong></td>
+<td align="center">6.718e-05</td>
+<td align="center">0.0001275</td>
+<td align="center">1.757e-05</td>
+<td align="center">2.673e-05</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr8_38795902_38796402</strong></td>
+<td align="center">0.0001721</td>
+<td align="center">6.097e-05</td>
+<td align="center">6.327e-05</td>
+<td align="center">0.000128</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr12_92270808_92271308</strong></td>
+<td align="center">3.164e-05</td>
+<td align="center">4.929e-05</td>
+<td align="center">0.0001448</td>
+<td align="center">0.0001997</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr12_51295467_51295967</strong></td>
+<td align="center">6.043e-06</td>
+<td align="center">0.0001456</td>
+<td align="center">8.594e-07</td>
+<td align="center">1.615e-05</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr15_74902825_74903325</strong></td>
+<td align="center">2.996e-05</td>
+<td align="center">0.0003589</td>
+<td align="center">3.861e-05</td>
+<td align="center">7.074e-06</td>
+</tr>
+</tbody>
+</table>
+<table style="width:93%;">
+<colgroup>
+<col width="43%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">PC9</th>
+<th align="center">PC10</th>
+<th align="center">PC11</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>chr12_92987578_92988078</strong></td>
+<td align="center">0.0002022</td>
+<td align="center">5.283e-06</td>
+<td align="center">0.0001728</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr1_224691015_224691515</strong></td>
+<td align="center">6.669e-06</td>
+<td align="center">3.329e-06</td>
+<td align="center">0.0001102</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr8_38795902_38796402</strong></td>
+<td align="center">1.797e-05</td>
+<td align="center">0.0001382</td>
+<td align="center">4.786e-05</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr12_92270808_92271308</strong></td>
+<td align="center">7.393e-05</td>
+<td align="center">6.688e-05</td>
+<td align="center">0.0001987</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>chr12_51295467_51295967</strong></td>
+<td align="center">1.024e-05</td>
+<td align="center">4.807e-07</td>
+<td align="center">3.969e-05</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>chr15_74902825_74903325</strong></td>
+<td align="center">4.397e-06</td>
+<td align="center">4.686e-06</td>
+<td align="center">0.0001824</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="annotate-genomic-context" class="section level2">
+<h2><span class="header-section-number">2.9</span> Annotate genomic context</h2>
+<p>Let’s annotate the genomic context of each peak such as nearby genes a given peak may regulate.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gr =<span class="st"> </span><span class="kw">makeGRangesFromDataFrame</span>(df, <span class="dt">keep.extra.columns=</span>T)
+peakAnno =<span class="st"> </span><span class="kw">annotatePeak</span>(gr, <span class="dt">tssRegion=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1000</span>, <span class="dv">1000</span>), <span class="dt">TxDb=</span>TxDb.Hsapiens.UCSC.hg19.knownGene, <span class="dt">annoDb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>)</code></pre></div>
+<pre><code>## &gt;&gt; preparing features information...      2019-05-05 02:13:04 PM 
+## &gt;&gt; identifying nearest features...        2019-05-05 02:13:04 PM 
+## &gt;&gt; calculating distance from peak to TSS...   2019-05-05 02:13:05 PM 
+## &gt;&gt; assigning genomic annotation...        2019-05-05 02:13:05 PM 
+## &gt;&gt; adding gene annotation...          2019-05-05 02:13:16 PM 
+## &gt;&gt; assigning chromosome lengths           2019-05-05 02:13:17 PM 
+## &gt;&gt; done...                    2019-05-05 02:13:17 PM</code></pre>
+<p>The genomic context of all peaks can be ploted using:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotAnnoPie</span>(peakAnno)</code></pre></div>
+<p><img src="atac_files/figure-html/plotGenomicContext-1.svg" width="672" /></p>
+<p>Let’s have a look at the 500 peaks with the highest loading for PC1. Looking at the PCA plot PC1 seems to separate Erythroid cells from the others.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dfPA =<span class="st"> </span><span class="kw">as.data.frame</span>(peakAnno)
+<span class="kw">rownames</span>(dfPA) =<span class="st"> </span><span class="kw">paste0</span>(dfPA<span class="op">$</span>seqnames, <span class="st">&#39;_&#39;</span>, dfPA<span class="op">$</span>start, <span class="st">&#39;_&#39;</span>, dfPA<span class="op">$</span>end)
+selpeaks =<span class="st"> </span>dfPA[<span class="kw">rownames</span>(<span class="kw">head</span>(contribution, <span class="dv">500</span>)),]
+pathway1 =<span class="st"> </span><span class="kw">enrichPathway</span>(selpeaks[<span class="kw">abs</span>(selpeaks<span class="op">$</span>distance) <span class="op">&lt;</span><span class="st"> </span><span class="dv">5000</span>,]<span class="op">$</span>geneId)
+<span class="kw">pander</span>(<span class="kw">head</span>(pathway1))</code></pre></div>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="27%" />
+<col width="21%" />
+<col width="36%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">ID</th>
+<th align="center">Description</th>
+<th align="center">GeneRatio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-6798695</strong></td>
+<td align="center">R-HSA-6798695</td>
+<td align="center">Neutrophil degranulation</td>
+<td align="center">16/117</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">R-HSA-189451</td>
+<td align="center">Heme biosynthesis</td>
+<td align="center">3/117</td>
+</tr>
+</tbody>
+</table>
+<table style="width:92%;">
+<caption>Table continues below</caption>
+<colgroup>
+<col width="27%" />
+<col width="16%" />
+<col width="16%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">BgRatio</th>
+<th align="center">pvalue</th>
+<th align="center">p.adjust</th>
+<th align="center">qvalue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-6798695</strong></td>
+<td align="center">480/10619</td>
+<td align="center">6.996e-05</td>
+<td align="center">0.03267</td>
+<td align="center">0.03267</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">11/10619</td>
+<td align="center">0.0002017</td>
+<td align="center">0.04709</td>
+<td align="center">0.04709</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">geneID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-6798695</strong></td>
+<td align="center">210/8694/10383/847/5553/54472/23197/3043/3071/5870/272/353189/8621/2992/4033/51646</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">210/3145/2235</td>
+</tr>
+</tbody>
+</table>
+<table style="width:38%;">
+<colgroup>
+<col width="27%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-6798695</strong></td>
+<td align="center">16</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dotplot</span>(pathway1)</code></pre></div>
+<pre><code>## wrong orderBy parameter; set to default `orderBy = &quot;x&quot;`</code></pre>
+<p><img src="atac_files/figure-html/pathwayEnrichment-1.svg" width="672" /></p>
+<p>Heme metabolism is important during erythropoiesis and the neutrophil degranulation pathway is important for cells of the immune system. Hence, it makes sense that these peaks separate the Erythroid cells from the white blood cells.</p>
+</div>
+<div id="differential-peak-calling" class="section level2">
+<h2><span class="header-section-number">2.10</span> Differential peak calling</h2>
+<p>We can also identify differential peaks between two cell types using DESeq2.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">res =<span class="st"> </span><span class="kw">results</span>(dds, <span class="dt">lfcThreshold=</span><span class="dv">1</span>, <span class="dt">contrast=</span><span class="kw">c</span>(<span class="st">&quot;celltype&quot;</span>, <span class="st">&quot;Bcell&quot;</span>, <span class="st">&quot;Ery&quot;</span>))
+<span class="kw">print</span>(<span class="kw">mcols</span>(res, <span class="dt">use.names=</span>T))</code></pre></div>
+<pre><code>## DataFrame with 6 rows and 2 columns
+##                        type                                   description
+##                 &lt;character&gt;                                   &lt;character&gt;
+## baseMean       intermediate     mean of normalized counts for all samples
+## log2FoldChange      results log2 fold change (MLE): celltype Bcell vs Ery
+## lfcSE               results         standard error: celltype Bcell vs Ery
+## stat                results         Wald statistic: celltype Bcell vs Ery
+## pvalue              results      Wald test p-value: celltype Bcell vs Ery
+## padj                results                          BH adjusted p-values</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">summary</span>(res))</code></pre></div>
+<pre><code>## 
+## out of 57891 with nonzero total read count
+## adjusted p-value &lt; 0.1
+## LFC &gt; 1.00 (up)    : 14782, 26%
+## LFC &lt; -1.00 (down) : 2132, 3.7%
+## outliers [1]       : 0, 0%
+## low counts [2]     : 0, 0%
+## (mean count &lt; 3)
+## [1] see &#39;cooksCutoff&#39; argument of ?results
+## [2] see &#39;independentFiltering&#39; argument of ?results
+## 
+## NULL</code></pre>
+<p>The histogram of p-values is</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(res<span class="op">$</span>pvalue, <span class="dt">breaks=</span><span class="dv">0</span><span class="op">:</span><span class="dv">20</span><span class="op">/</span><span class="dv">20</span>, <span class="dt">col=</span><span class="st">&quot;grey50&quot;</span>, <span class="dt">border=</span><span class="st">&quot;white&quot;</span>, <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="dt">main=</span><span class="st">&quot;Histogram of p-values&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;p-value&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/histPValues-1.svg" width="672" /></p>
+<p>The log-fold changes can be visualized using</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotMA</span>(res, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>))</code></pre></div>
+<p><img src="atac_files/figure-html/logFoldChange-1.svg" width="672" /></p>
+<p>Let’s plot the significant results in a heatmap:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">sum</span>(res<span class="op">$</span>padj <span class="op">&lt;</span><span class="st"> </span><span class="fl">0.01</span> <span class="op">&amp;</span><span class="st"> </span><span class="kw">abs</span>(res<span class="op">$</span>log2FoldChange) <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>))</code></pre></div>
+<pre><code>## [1] 9105</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat =<span class="st"> </span>cm[<span class="kw">which</span>(res<span class="op">$</span>padj <span class="op">&lt;</span><span class="st"> </span><span class="fl">0.01</span> <span class="op">&amp;</span><span class="st"> </span><span class="kw">abs</span>(res<span class="op">$</span>log2FoldChange) <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>),]
+mat =<span class="st"> </span>mat <span class="op">-</span><span class="st"> </span><span class="kw">rowMeans</span>(mat)
+anno =<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">colData</span>(dds)[, <span class="kw">c</span>(<span class="st">&quot;sample&quot;</span>, <span class="st">&quot;celltype&quot;</span>)])
+<span class="kw">rownames</span>(mat) =<span class="st"> </span><span class="ot">NULL</span>
+<span class="kw">pheatmap</span>(mat, <span class="dt">annotation_col =</span> anno, <span class="dt">scale=</span><span class="st">&quot;row&quot;</span>)</code></pre></div>
+<p><img src="atac_files/figure-html/heatmap-1.svg" width="672" /></p>
+<p>For the up- and down-regulated peaks we can again perform pathway enrichment. Please note that up-regulated peaks are higher in B cells whereas down-regulated peaks are higher in Erythroid cells given our contrast of B-cells vs. Erythroid cells.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">selpeaks =<span class="st"> </span>dfPA[<span class="kw">rownames</span>(cm[<span class="kw">which</span>(res<span class="op">$</span>padj <span class="op">&lt;</span><span class="st"> </span><span class="fl">0.1</span> <span class="op">&amp;</span><span class="st"> </span>res<span class="op">$</span>log2FoldChange<span class="op">&gt;</span><span class="dv">0</span>),]),]
+pathwayUp =<span class="st"> </span><span class="kw">enrichPathway</span>(selpeaks[<span class="kw">abs</span>(selpeaks<span class="op">$</span>distance) <span class="op">&lt;</span><span class="st"> </span><span class="dv">5000</span>,]<span class="op">$</span>geneId)
+<span class="kw">pander</span>(<span class="kw">head</span>(pathwayUp))</code></pre></div>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="25%" />
+<col width="20%" />
+<col width="41%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">ID</th>
+<th align="center">Description</th>
+<th align="center">GeneRatio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-194840</strong></td>
+<td align="center">R-HSA-194840</td>
+<td align="center">Rho GTPase cycle</td>
+<td align="center">59/1664</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-983695</strong></td>
+<td align="center">R-HSA-983695</td>
+<td align="center">Antigen activates B Cell Receptor (BCR) leading to generation of second messengers</td>
+<td align="center">22/1664</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-2029480</strong></td>
+<td align="center">R-HSA-2029480</td>
+<td align="center">Fcgamma receptor (FCGR) dependent phagocytosis</td>
+<td align="center">39/1664</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-4420097</strong></td>
+<td align="center">R-HSA-4420097</td>
+<td align="center">VEGFA-VEGFR2 Pathway</td>
+<td align="center">41/1664</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-449147</strong></td>
+<td align="center">R-HSA-449147</td>
+<td align="center">Signaling by Interleukins</td>
+<td align="center">122/1664</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-9006934</strong></td>
+<td align="center">R-HSA-9006934</td>
+<td align="center">Signaling by Receptor Tyrosine Kinases</td>
+<td align="center">120/1664</td>
+</tr>
+</tbody>
+</table>
+<table style="width:94%;">
+<caption>Table continues below</caption>
+<colgroup>
+<col width="27%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">BgRatio</th>
+<th align="center">pvalue</th>
+<th align="center">p.adjust</th>
+<th align="center">qvalue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-194840</strong></td>
+<td align="center">138/10619</td>
+<td align="center">2.048e-14</td>
+<td align="center">2.737e-11</td>
+<td align="center">2.367e-11</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-983695</strong></td>
+<td align="center">32/10619</td>
+<td align="center">2.261e-11</td>
+<td align="center">1.51e-08</td>
+<td align="center">1.306e-08</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-2029480</strong></td>
+<td align="center">86/10619</td>
+<td align="center">6.262e-11</td>
+<td align="center">2.789e-08</td>
+<td align="center">2.413e-08</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-4420097</strong></td>
+<td align="center">99/10619</td>
+<td align="center">6.401e-10</td>
+<td align="center">2.138e-07</td>
+<td align="center">1.85e-07</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-449147</strong></td>
+<td align="center">463/10619</td>
+<td align="center">1.123e-09</td>
+<td align="center">3.001e-07</td>
+<td align="center">2.596e-07</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-9006934</strong></td>
+<td align="center">458/10619</td>
+<td align="center">2.24e-09</td>
+<td align="center">4.698e-07</td>
+<td align="center">4.065e-07</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="3%" />
+<col width="96%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">geneID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-194840</strong></td>
+<td align="center">55160/998/10451/389/9181/257106/2665/94134/9886/391/143872/57569/397/121512/54509/90627/8874/23263/394/11214/29/201176/396/23526/7409/23370/4650/51291/64857/9138/388/6654/23433/9938/55843/57580/613/5880/9901/50650/57514/8997/26084/116984/399/83478/10144/79658/7204/23092/221472/117289/5879/23221/84904/89846/7410/395/393</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-983695</strong></td>
+<td align="center">5293/29760/118788/6786/5777/3709/801/5336/974/7409/933/973/6654/3708/4690/27071/5295/2534/80228/640/4067/6850</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-2029480</strong></td>
+<td align="center">998/10163/2268/10451/3709/3071/122618/4644/5336/4641/71/7525/7409/4650/5581/10097/10096/7456/10109/3055/63916/5594/3708/5580/4690/5290/5295/26999/2534/60/5879/9844/3984/10095/4067/5747/6850/7410/7454</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-4420097</strong></td>
+<td align="center">5590/998/10163/5567/10451/117145/9047/4688/9261/3845/3709/3071/5829/801/5579/1535/71/6093/7409/208/8440/3685/63916/4689/3708/5580/4690/5290/253260/5295/26999/2534/60/5879/9844/857/2185/5747/79109/7410/1536</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-449147</strong></td>
+<td align="center">5293/998/163702/6195/5724/3932/3725/1901/1435/3570/5451/356/9261/3586/29949/7431/6935/3688/3185/240/29760/9049/9846/3587/7132/5777/51561/11213/1848/2322/3146/2308/3936/4792/57161/2353/302/4088/3603/4205/3566/50615/246778/3684/3687/3965/6352/6348/6351/5608/9021/7525/5771/596/7409/2208/3383/9466/3718/3594/2323/5443/6654/57162/3557/26469/6775/2335/3667/3055/351/6647/3588/3689/6285/23765/5594/4282/5008/3162/3568/729230/1234/941/942/3592/5290/604/5602/4790/3558/2247/3600/3575/5295/4208/84868/23291/8878/3662/1026/5292/6885/2309/2534/53832/6196/7291/3569/5898/5478/2185/1846/4067/3574/4609/4507/6850/2889/6197/4478/3561</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-9006934</strong></td>
+<td align="center">5590/998/6195/10163/3932/5567/10451/117145/9047/26052/3915/4688/127124/9261/3688/3185/143282/10312/9846/80310/5777/5800/3845/3709/3071/1848/3479/10019/5829/2254/2322/8874/801/161742/6692/5607/1445/4205/5579/57610/1535/84951/3675/71/7525/5771/6093/3909/7409/208/2323/29924/6654/5581/200734/8440/26469/10254/2591/3685/8828/2335/3667/1286/1285/23767/83737/63916/1299/5753/6285/5594/135/4689/9402/3708/5580/26018/4690/5290/2247/2549/253260/55914/5295/4208/2241/9542/1729/5159/26999/2534/5796/2099/6196/60/5879/9844/5898/64759/10603/857/673/26281/2185/1846/2260/4067/55824/54845/5440/5747/5774/9550/79109/2889/5900/7410/6197/1536</td>
+</tr>
+</tbody>
+</table>
+<table style="width:38%;">
+<colgroup>
+<col width="27%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-194840</strong></td>
+<td align="center">59</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-983695</strong></td>
+<td align="center">22</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-2029480</strong></td>
+<td align="center">39</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-4420097</strong></td>
+<td align="center">41</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>R-HSA-449147</strong></td>
+<td align="center">122</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>R-HSA-9006934</strong></td>
+<td align="center">120</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">selpeaks =<span class="st"> </span>dfPA[<span class="kw">rownames</span>(cm[<span class="kw">which</span>(res<span class="op">$</span>padj <span class="op">&lt;</span><span class="st"> </span><span class="fl">0.1</span> <span class="op">&amp;</span><span class="st"> </span>res<span class="op">$</span>log2FoldChange<span class="op">&lt;</span><span class="dv">0</span>),]),]
+pathwayDown =<span class="st"> </span><span class="kw">enrichPathway</span>(selpeaks[<span class="kw">abs</span>(selpeaks<span class="op">$</span>distance) <span class="op">&lt;</span><span class="st"> </span><span class="dv">5000</span>,]<span class="op">$</span>geneId)
+<span class="kw">pander</span>(<span class="kw">head</span>(pathwayDown))</code></pre></div>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="24%" />
+<col width="19%" />
+<col width="25%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">ID</th>
+<th align="center">Description</th>
+<th align="center">GeneRatio</th>
+<th align="center">BgRatio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">R-HSA-189451</td>
+<td align="center">Heme biosynthesis</td>
+<td align="center">5/437</td>
+<td align="center">11/10619</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table continues below</caption>
+<colgroup>
+<col width="24%" />
+<col width="15%" />
+<col width="14%" />
+<col width="12%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">pvalue</th>
+<th align="center">p.adjust</th>
+<th align="center">qvalue</th>
+<th align="center">geneID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">4.339e-05</td>
+<td align="center">0.04538</td>
+<td align="center">0.04476</td>
+<td align="center">7389/7390/3145/2235/210</td>
+</tr>
+</tbody>
+</table>
+<table style="width:36%;">
+<colgroup>
+<col width="26%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>R-HSA-189451</strong></td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p>There are many other methods for functional enrichments such as <a href="http://great.stanford.edu/">GREAT</a> or <a href="https://david.ncifcrf.gov/">DAVID</a>. This concludes the ATAC-Seq tutorial. I hope you enjoyed it.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
