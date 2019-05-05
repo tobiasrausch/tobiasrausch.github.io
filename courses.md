@@ -23,6 +23,6 @@ Work-in-progress, current chapters:
 * [Data Exploration]({{ site.url }}/courses/ml2019/dataExploration.html)
 * [Supervised Learning]({{ site.url }}/courses/ml2019/supervised.html)
 
-ATAC-Seq tutorial in R Statistics
+ATAC-Seq tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
 
-* [ATAC-Seq Tutorial]({{ site.url }}/courses/bertinoro2019/atac.html)
+* [ATAC-Seq Tutorial]({{ site.url }}/courses/atac/)
