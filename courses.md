@@ -15,7 +15,7 @@ Once per year, I am one of the teachers for the "Cancer Genomics" course at the 
 
 A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/ekg/freebayes) and [Delly](https://github.com/dellytools/delly).
 
-* [Variant Calling in NGS data](https://tobiasrausch.gitbooks.io/variant-calling/content/)
+* [Variant Calling in NGS data]({{ site.url }}/courses/vc/)
 
 A machine learning tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
 Work-in-progress, current chapters:
