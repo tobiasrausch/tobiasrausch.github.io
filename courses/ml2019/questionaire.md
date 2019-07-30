@@ -87,7 +87,7 @@ Below are a set of questions for our machine learning exercises. There is always
 
    c. FP/(FP+TP)
 
-   d. (2*TP)/(2*TP+FP+FN)
+   d. (2TP)/(2TP+FP+FN)
 
 
 0. The F1 score (F-score) is defined as
@@ -98,5 +98,5 @@ Below are a set of questions for our machine learning exercises. There is always
 
    c. FP/(FP+TP)
 
-   d. (2*TP)/(2*TP+FP+FN)
+   d. (2TP)/(2TP+FP+FN)
 
