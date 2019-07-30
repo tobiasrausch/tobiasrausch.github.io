@@ -1,10 +1,10 @@
 # Machine learning questions
 
-Below are a set of questions for our machine learning exercises. There is always one correct answer for each question. Thus, please email me the answers as a simple list, i.e. answers: 1.2., 2.3., 3.4., ... You are welcome to use, of course, the links provided in the exercises to answer the questions. The [Hundred-Page Machine Learning textbook](http://themlbook.com/wiki/doku.php) might also be helpful to answer some of the theoretical questions. The chapters can be read online for free, you do not need to buy the book (unless you like it and want a printed copy).
+Below are a set of questions for our machine learning exercises. There is always one correct answer for each question. Thus, please email me the answers as a simple list, i.e. answers: 1.a, 2.b, 3.a, and so on. You are welcome to use, of course, the links provided in the exercises to answer the questions. The [Hundred-Page Machine Learning textbook](http://themlbook.com/wiki/doku.php) might also be helpful to answer some of the theoretical questions. The chapters can be read online for free, you do not need to buy the book (unless you like it and want a printed copy).
 
 ## Questions
 
-1. For the [Breast Cancer data set](http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) we wanted to predict malignant versus benign from a set of features about each tumor (area, radius, perimeter, ...). The data was labeled with 0=benign and 1=malignant and thus, this is an example of
+1. For the [Breast Cancer data set](http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) we wanted to predict malignant (encoded as 1) versus benign (encoded as 0) from a set of features about each tumor (area, radius, perimeter, ...). The data was labeled with benign (0) and malignant (1) and thus, this is an example of
 
    a. Supervised Learning
 
