@@ -52,7 +52,7 @@ permalink: "/projects/"
 
 ## GEAR Genome Analysis Server
 
-[Gear](https://gear.embl.de/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
+[Gear](https://www.gear-genomics.com/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
 
 ---
 

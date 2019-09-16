@@ -52,19 +52,19 @@ title: Tobias Rausch
 
 ---
 
-## Web Applications for Molecular Biologists ([gear.embl.de](https://gear.embl.de))
+## Web Applications for Molecular Biologists ([www.gear-genomics.com](https://www.gear-genomics.com))
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/gear-genomics/indigo.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/gear-genomics/indigo/network/)
 
-[Indigo](https://gear.embl.de/indigo/): Variant Discovery in Chromatogram traces obtained from Sanger sequencing of PCR products
+[Indigo](https://www.gear-genomics.com/indigo/): Variant Discovery in Chromatogram traces obtained from Sanger sequencing of PCR products
 
 ---
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/alfred.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/alfred/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/alfred.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/alfred/network/)
 
-[Alfred](https://gear.embl.de/alfred/): Interactive, multi-sample and read-group aware quality control browser for NGS data.
+[Alfred](https://www.gear-genomics.com/alfred/): Interactive, multi-sample and read-group aware quality control browser for NGS data.
 
 ---
 
