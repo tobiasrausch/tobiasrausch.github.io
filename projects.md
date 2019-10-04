@@ -52,7 +52,24 @@ permalink: "/projects/"
 
 ## GEAR Genome Analysis Server
 
+[![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
+
 [Gear](https://www.gear-genomics.com/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
+
+---
+
+## Computational Biology Methods
+
+[![DOI:10.1093/bioinformatics/bts378](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bts378.svg)](https://doi.org/10.1093/bioinformatics/bts378)
+
+[Delly](https://github.com/dellytools/delly/): Structural variant discovery by integrated paired-end and split-read analysis.
+
+
+---
+
+[![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
+
+[Alfred](https://github.com/tobiasrausch/alfred/): BAM alignment statistics, feature counting and feature annotation.
 
 ---
 
