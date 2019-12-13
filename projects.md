@@ -50,7 +50,7 @@ permalink: "/projects/"
 
 ---
 
-## GEAR Genome Analysis Server
+## Web Applications for Molecular Biologists
 
 [![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
 
