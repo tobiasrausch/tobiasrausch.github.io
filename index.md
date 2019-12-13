@@ -52,8 +52,7 @@ title: Software
 
 ---
 
-## Web Applications for Molecular Biologists
-## URL: ([https://www.gear-genomics.com](https://www.gear-genomics.com))
+## GEAR: ([https://www.gear-genomics.com](https://www.gear-genomics.com))
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/gear-genomics/indigo.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/gear-genomics/indigo/network/)
