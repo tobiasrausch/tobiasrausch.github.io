@@ -38,6 +38,12 @@ permalink: "/projects/"
 
 ---
 
+[![DOI:10.1038/s41586-019-1815-x](https://zenodo.org/badge/DOI/10.1038/s41586-019-1815-x.svg)](https://doi.org/10.1038/s41586-019-1815-x)
+
+[The molecular landscape of ETMR at diagnosis and relapse](https://www.nature.com/articles/s41586-019-1815-x): ETMR tumours in which the proposed driver C19MC2 was not amplified frequently had germline mutations in DICER1 or other microRNA-related aberrations.
+
+---
+
 [Pan-Cancer Analysis](https://www.biorxiv.org/content/early/2017/11/01/208330): Germline determinants of the somatic mutation landscape in 2,642 cancer genomes.
 
 ---
