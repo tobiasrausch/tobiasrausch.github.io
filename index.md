@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tobias Rausch
+title: Software
 ---
 
 ## Methods for Computational Genomics
