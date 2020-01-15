@@ -45,13 +45,6 @@ title: Software
 
 ---
 
-[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/tobiasrausch/tegua/master/LICENSE)
-[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/tegua.svg)](https://github.com/tobiasrausch/tegua/releases)
-
-[Tegua](https://github.com/tobiasrausch/tegua/): Structural Variant Discovery using Long Reads
-
----
-
 ## GEAR: [https://www.gear-genomics.com](https://www.gear-genomics.com)
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
