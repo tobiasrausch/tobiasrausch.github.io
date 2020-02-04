@@ -12,7 +12,7 @@ permalink: "/delly/"
 <h1>Delly: Integrated Structural Variant Discovery</h1>
 
 
-[![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/installer/conda.svg)](https://conda.anaconda.org/bioconda/delly)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/installer/conda.svg)](https://anaconda.org/bioconda/delly)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/downloads.svg)](https://anaconda.org/bioconda/delly)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/license.svg)](https://anaconda.org/bioconda/delly)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/platforms.svg)](https://anaconda.org/bioconda/delly)
