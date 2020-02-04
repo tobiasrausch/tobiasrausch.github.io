@@ -12,12 +12,12 @@ permalink: "/delly/"
 <h1>Delly: Integrated Structural Variant Discovery</h1>
 
 
-[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/delly/README.html)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/installer/conda.svg)](https://conda.anaconda.org/bioconda/delly)
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/downloads.svg)](https://anaconda.org/bioconda/delly)
-[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/dellytools/delly/master/LICENSE)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/license.svg)](https://anaconda.org/bioconda/delly)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/delly/badges/platforms.svg)](https://anaconda.org/bioconda/delly)
 [![GitHub Releases](https://img.shields.io/github/release/dellytools/delly.svg)](https://github.com/dellytools/delly/releases)
 [![DOI:10.1093/bioinformatics/bts378](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bts378.svg)](https://doi.org/10.1093/bioinformatics/bts378)
-
 
 ## Installation and Usage
 
