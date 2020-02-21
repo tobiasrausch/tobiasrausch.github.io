@@ -62,7 +62,7 @@ permalink: "/projects/"
 
 [![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
 
-[Gear](https://www.gear-genomics.com/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
+[www.gear-genomics.com](https://www.gear-genomics.com/): Genome Analysis Server with interactive and efficient web applications for molecular biologists.
 
 ---
 
