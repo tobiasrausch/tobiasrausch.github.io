@@ -44,7 +44,9 @@ permalink: "/projects/"
 
 ---
 
-[Pan-Cancer Analysis](https://www.biorxiv.org/content/early/2017/11/01/208330): Germline determinants of the somatic mutation landscape in 2,642 cancer genomes.
+[![DOI:10.1038/s41586-020-1969-6](https://zenodo.org/badge/DOI/10.1038/s41586-020-1969-6.svg)](https://doi.org/10.1038/s41586-020-1969-6)
+
+[Pan-Cancer Analysis](https://doi.org/10.1038/s41586-020-1969-6): Germline determinants of the somatic mutation landscape in 2,642 cancer genomes.
 
 ---
 
