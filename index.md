@@ -47,6 +47,13 @@ title: Software
 
 ---
 
+[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/rdxon/blob/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/rdxon.svg)](https://github.com/tobiasrausch/rdxon/releases)
+
+[rdxon](https://github.com/tobiasrausch/rdxon/): Rapid method to filter FASTQ files for reads containing k-mers absent in the entire 1000 Genomes sequencing data. Suitable to discover disease-causing mutations in rare disorders independent of any reference genome.
+
+---
+
 ## GEAR: [www.gear-genomics.com](https://www.gear-genomics.com)
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
