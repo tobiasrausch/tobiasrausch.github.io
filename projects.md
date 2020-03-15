@@ -85,7 +85,7 @@ permalink: "/projects/"
 
 ---
 
-[![DOI:10.1016/j.jaci.2013.02.012](https://zenodo.org/badge/DOI/10.1016/j.jaci.2013.02.012.svg)](https://doi.org/10.1016/j.jaci.2013.02.012)
+[![DOI:10.1186/s12864-020-6635-8](https://zenodo.org/badge/DOI/10.1186/s12864-020-6635-8.svg)](https://doi.org/10.1186/s12864-020-6635-8)
 
 [Tracy](https://github.com/gear-genomics/tracy/): Basecalling, alignment and deconvolution of Sanger Chromatogram trace files.
 
