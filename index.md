@@ -31,6 +31,7 @@ title: Software
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/tracy/badges/downloads.svg)](https://anaconda.org/bioconda/tracy)
 [![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/gear-genomics/tracy/blob/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/gear-genomics/tracy.svg)](https://github.com/gear-genomics/tracy/releases)
+[![DOI:10.1186/s12864-020-6635-8](https://zenodo.org/badge/DOI/10.1186/s12864-020-6635-8.svg)](https://doi.org/10.1186/s12864-020-6635-8)
 
 [Tracy](https://github.com/gear-genomics/tracy/): Basecalling, alignment and deconvolution of Sanger Chromatogram trace files.
 
@@ -40,6 +41,7 @@ title: Software
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/dicey/badges/downloads.svg)](https://anaconda.org/bioconda/dicey)
 [![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/gear-genomics/dicey/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/gear-genomics/dicey.svg)](https://github.com/gear-genomics/dicey/releases)
+[![DOI:10.1186/s12864-020-6635-8](https://zenodo.org/badge/DOI/10.1186/s12864-020-6635-8.svg)](https://doi.org/10.1186/s12864-020-6635-8)
 
 [Dicey](https://github.com/gear-genomics/dicey/): In-silico PCR and variant primer design
 
