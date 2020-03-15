@@ -58,6 +58,10 @@ permalink: "/projects/"
 
 ---
 
+[rdxon](https://github.com/tobiasrausch/rdxon/): Rapid method to filter FASTQ files for reads containing k-mers absent in the entire 1000 Genomes sequencing data. Suitable to discover disease-causing mutations in rare disorders independent of any reference genome.
+
+---
+
 ## Web Applications for Molecular Biologists
 
 [![DOI:10.1186/s12864-020-6635-8](https://zenodo.org/badge/DOI/10.1186/s12864-020-6635-8.svg)](https://doi.org/10.1186/s12864-020-6635-8)
@@ -78,6 +82,12 @@ permalink: "/projects/"
 [![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
 
 [Alfred](https://github.com/tobiasrausch/alfred/): BAM alignment statistics, feature counting and feature annotation.
+
+---
+
+[![DOI:10.1016/j.jaci.2013.02.012](https://zenodo.org/badge/DOI/10.1016/j.jaci.2013.02.012.svg)](https://doi.org/10.1016/j.jaci.2013.02.012)
+
+[Tracy](https://github.com/gear-genomics/tracy/): Basecalling, alignment and deconvolution of Sanger Chromatogram trace files.
 
 ---
 
