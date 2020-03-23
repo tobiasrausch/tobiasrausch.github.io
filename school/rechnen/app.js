@@ -9,29 +9,38 @@ const answer3Text = document.getElementById('answer3Text');
 const task = document.getElementById('task');
 let correctIdx = -1;
 let maxVal = 20;
+let operation = 'plus';
+let allOps = ['plus', 'minus', 'mal', 'geteilt'];
 
-// Parse maxVal if present
-const getString = window.location.search;
-if (getString[0] === '?') {
-    let query = window.location.search.substring(1); 
-    let vars = query.split("&"); 
-    for (let i=0;i<vars.length;i++)
-    { 
-      let pair = vars[i].split("="); 
-      if (pair[0] === 'max')
-      { 
-        maxVal = Number(pair[1]); 
-      } 
-    }
-    if (maxVal < 3) maxVal = 3;
-    console.log(maxVal);
-}
+// Set defaults;
+setGetDefaults();
 
 // Load event listeners
 loadEventListeners();
 
 // Generate a calculation exercise
 fillAnswers();
+
+function setGetDefaults() {
+    let mv = 20;
+    const getString = window.location.search;
+    if (getString[0] === '?') {
+        let query = window.location.search.substring(1);
+        let vars = query.split("&");
+        for (let i = 0; i < vars.length; i++) {
+            let pair = vars[i].split("=");
+            if (pair[0] === 'max') {
+                mv = Number(pair[1]);
+            } else if (pair[0] === 'op') {
+                if (allOps.includes(pair[1])) {
+                    operation = pair[1];
+                }
+            }
+        }
+        if (mv < 3) mv = 3;
+    }
+    return mv;
+}
 
 function loadEventListeners() {
     form.addEventListener('submit', submitAnswer);
@@ -47,18 +56,43 @@ function fillAnswers() {
     let x = maxVal;
     let y = maxVal;
     do {
-        x = getRInt(1,maxVal);
-        y = getRInt(1, maxVal - x);
-    } while (x + y > maxVal);
-    task.textContent = x.toString() + " + " + y.toString();
-    let correctVal = x + y;
+        x = getRInt(0, maxVal);
+        if (operation === "plus") {
+            y = getRInt(0, maxVal - x);
+            correctVal = x + y;
+        } else if (operation === "minus") {
+            y = getRInt(0, x);
+            correctVal = x - y;
+        } else if (operation === "mal") {
+            if (x !== 0) {
+                y = getRInt(0, maxVal / x);
+            } else {
+                y = getRInt(0, maxVal);
+            }
+            correctVal = x * y;
+        } else if (operation === "geteilt") {
+            do {
+                y = getRInt(1, x);
+            } while (x % y !== 0);
+            correctVal = x / y;
+        }
+    } while (correctVal > maxVal);
+    if (operation === "plus") {
+        task.textContent = x.toString() + " + " + y.toString();
+    } else if (operation === "minus") {
+        task.textContent = x.toString() + " - " + y.toString();
+    } else if (operation === "mal") {
+        task.textContent = x.toString() + " * " + y.toString();
+    } else if (operation === "geteilt") {
+        task.textContent = x.toString() + " / " + y.toString();
+    }
     correctIdx = getRInt(0, 2);
-    let pastValues = [correctVal, correctVal, correctVal] 
+    let pastValues = [correctVal, correctVal, correctVal]
     for (let i = 0; i < 3; i++) {
         let res;
         if (i !== correctIdx) {
             do {
-                res = getRInt(1, maxVal);
+                res = getRInt(0, maxVal);
             } while (pastValues.includes(res));
             pastValues[i] = res;
         } else {
@@ -71,11 +105,11 @@ function fillAnswers() {
         } else if (i === 1) {
             answer2.checked = false;
             answer2.value = res.toString();
-            answer2Text.textContent = res.toString();            
+            answer2Text.textContent = res.toString();
         } else {
             answer3.checked = false;
             answer3.value = res.toString();
-            answer3Text.textContent = res.toString();                
+            answer3Text.textContent = res.toString();
         }
     }
 }
