@@ -91,7 +91,7 @@ function submitAnswer(e) {
     }
     if (idx === correctIdx) {
         showCorrect();
-        fillAnswers();
+        setTimeout(fillAnswers, 1000);
     } else {
         showIncorrect();
     }
