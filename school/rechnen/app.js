@@ -22,7 +22,6 @@ loadEventListeners();
 fillAnswers();
 
 function setGetDefaults() {
-    let mv = 20;
     const getString = window.location.search;
     if (getString[0] === '?') {
         let query = window.location.search.substring(1);
@@ -30,16 +29,16 @@ function setGetDefaults() {
         for (let i = 0; i < vars.length; i++) {
             let pair = vars[i].split("=");
             if (pair[0] === 'max') {
-                mv = Number(pair[1]);
+                let mv = Number(pair[1]);
+		if (mv < 3) mv = 3;
+		maxVal = mv;
             } else if (pair[0] === 'op') {
                 if (allOps.includes(pair[1])) {
                     operation = pair[1];
                 }
             }
         }
-        if (mv < 3) mv = 3;
     }
-    return mv;
 }
 
 function loadEventListeners() {
