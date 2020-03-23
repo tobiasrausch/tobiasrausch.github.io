@@ -55,24 +55,37 @@ function fillAnswers() {
     let x = maxVal;
     let y = maxVal;
     do {
-        x = getRInt(0, maxVal);
         if (operation === "plus") {
+            x = getRInt(0, maxVal);
             y = getRInt(0, maxVal - x);
             correctVal = x + y;
         } else if (operation === "minus") {
+            x = getRInt(0, maxVal);
             y = getRInt(0, x);
             correctVal = x - y;
         } else if (operation === "mal") {
-            if (x !== 0) {
-                y = getRInt(0, maxVal / x);
-            } else {
-                y = getRInt(0, maxVal);
-            }
+            let upperBound = maxVal / 2;
+            if (upperBound < 3) upperBound = 3;
+            x = getRInt(2, upperBound);
+            let penalty;
+            do {
+                if (x !== 0) {
+                    y = getRInt(0, maxVal / x);
+                } else {
+                    y = getRInt(0, maxVal);
+                }
+                penalty = 5;
+                if ((y === 1) || (y === 0)) penalty = getRInt(0,10);
+            } while (penalty != 5);
             correctVal = x * y;
         } else if (operation === "geteilt") {
+            x = getRInt(0, maxVal);
+            let penalty;
             do {
                 y = getRInt(1, x);
-            } while (x % y !== 0);
+                penalty = 5;
+                if ((x === y) || (y === 1)) penalty = getRInt(0,10);
+            } while ((x % y !== 0) || (penalty !== 5));
             correctVal = x / y;
         }
     } while (correctVal > maxVal);
