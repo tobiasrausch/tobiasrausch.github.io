@@ -9,8 +9,18 @@ const answer3Text = document.getElementById('answer3Text');
 const task = document.getElementById('task');
 let correctIdx = -1;
 let maxVal = 20;
+// Mode false: numeric, true: reading
+let tm = false;
 let operation = 'plus';
 let allOps = ['plus', 'minus', 'mal', 'geteilt'];
+let textdb = [['Jojo liebt ...', 'kochen', 'Gemüse', 'tauchen', 'Knochen'],
+['Ninos Opa schläft im ...', 'Sand', 'Wasser', 'Schrank', 'Bett'],
+['Welches Wort passt nicht? Nino und Nina arbeiten spielen zusammen.', 'Nina', 'zusammen', 'Nino', 'arbeiten'],
+['Welches Wort passt nicht? Nino klettert auf den Kuchen Baum.', 'Nino', 'auf', 'klettert', 'Kuchen'],
+['Welches Wort passt nicht? Nino ist mal wieder Fenster traurig.', 'traurig', 'mal', 'wieder', 'Fenster'],
+['Welches Wort passt nicht? Jojo spricht bellt laut.', 'Jojo', 'bellt', 'laut', 'bellt']
+]
+
 
 // Set defaults;
 setGetDefaults();
@@ -18,7 +28,7 @@ setGetDefaults();
 // Load event listeners
 loadEventListeners();
 
-// Generate a calculation exercise
+// Generate next exercise
 fillAnswers();
 
 function setGetDefaults() {
@@ -30,12 +40,15 @@ function setGetDefaults() {
             let pair = vars[i].split("=");
             if (pair[0] === 'max') {
                 let mv = Number(pair[1]);
-		if (mv < 3) mv = 3;
-		maxVal = mv;
+                if (mv < 3) mv = 3;
+                maxVal = mv;
             } else if (pair[0] === 'op') {
                 if (allOps.includes(pair[1])) {
                     operation = pair[1];
                 }
+            } else if (pair[0] === 'tm') {
+                if (pair[1] === 'true') tm = true;
+                else tm = false;
             }
         }
     }
@@ -52,6 +65,36 @@ function getRInt(min, max) {
 }
 
 function fillAnswers() {
+    if (tm) fillAnswersText();
+    else fillAnswersNumeric();
+}
+
+function fillAnswersText() {
+    let idx = getRInt(0, textdb.length - 1);
+    task.textContent = textdb[idx][0];
+    correctIdx = getRInt(0, 2);
+    for (let i = 0; i < 3; i++) {
+        let res = textdb[idx][i + 1];
+        if (i === correctIdx) {
+            res = textdb[idx][4];
+        }
+        if (i === 0) {
+            answer1.checked = false;
+            answer1.value = res.toString();
+            answer1Text.textContent = res.toString();
+        } else if (i === 1) {
+            answer2.checked = false;
+            answer2.value = res.toString();
+            answer2Text.textContent = res.toString();
+        } else {
+            answer3.checked = false;
+            answer3.value = res.toString();
+            answer3Text.textContent = res.toString();
+        }
+    }
+}
+
+function fillAnswersNumeric() {
     let x = maxVal;
     let y = maxVal;
     do {
@@ -75,7 +118,7 @@ function fillAnswers() {
                     y = getRInt(0, maxVal);
                 }
                 penalty = 5;
-                if ((y === 1) || (y === 0)) penalty = getRInt(0,10);
+                if ((y === 1) || (y === 0)) penalty = getRInt(0, 10);
             } while (penalty != 5);
             correctVal = x * y;
         } else if (operation === "geteilt") {
@@ -84,7 +127,7 @@ function fillAnswers() {
             do {
                 y = getRInt(1, x);
                 penalty = 5;
-                if ((x === y) || (y === 1)) penalty = getRInt(0,10);
+                if ((x === y) || (y === 1)) penalty = getRInt(0, 10);
             } while ((x % y !== 0) || (penalty !== 5));
             correctVal = x / y;
         }
