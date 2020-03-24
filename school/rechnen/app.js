@@ -18,7 +18,7 @@ let textdb = [['Jojo liebt ...', 'kochen', 'Gemüse', 'tauchen', 'Knochen'],
 ['Welches Wort passt nicht? Nino und Nina arbeiten spielen zusammen.', 'Nina', 'zusammen', 'Nino', 'arbeiten'],
 ['Welches Wort passt nicht? Nino klettert auf den Kuchen Baum.', 'Nino', 'auf', 'klettert', 'Kuchen'],
 ['Welches Wort passt nicht? Nino ist mal wieder Fenster traurig.', 'traurig', 'mal', 'wieder', 'Fenster'],
-['Welches Wort passt nicht? Jojo spricht bellt laut.', 'Jojo', 'bellt', 'laut', 'bellt']
+['Welches Wort passt nicht? Jojo spricht bellt laut.', 'Jojo', 'bellt', 'laut', 'spricht']
 ]
 
 
