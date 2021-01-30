@@ -75,15 +75,22 @@ title: Software
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/ATACseq.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/ATACseq.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/network/)
 
-[ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational Workflow to analyze ATAC-Seq data.
+[ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational workflow to analyze ATAC-Seq data.
 
 ---
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/nRex.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/nRex/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/nRex.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/nRex/network/)
 
-[DNA Variant Calling](https://github.com/tobiasrausch/nRex/): Computational Workflow to analyze DNA whole-genome data and targeted NGS data.
+[DNA Variant Calling](https://github.com/tobiasrausch/nRex/): Computational workflow to analyze DNA whole-genome data and targeted NGS data.
 
+
+---
+
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/covid19.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/covid19/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/covid19.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/covid19/network/)
+
+[SARS-CoV-2 Analysis Pipeline](https://github.com/tobiasrausch/covid19/): Computational workflow to analyze short-read, whole-genome SARS-CoV-2 data.
 
 ---
 
