@@ -4,7 +4,7 @@ layout: default
 permalink: "/about/"
 ---
 
-Hello. I am Tobias Rausch, a bioinformatician working in computational genomics. I'm specialized in structural variant discovery, sequence analysis algorithms and software engineering. I am a passionate programmer and most of my code is publicly available on [GitHub](https://github.com/tobiasrausch). I work at [EMBL](https://www.embl.de/), a great research institution for molecular biology. I am very thankful for my job and I truly enjoy it (almost) every day. More information can be found through [LinkedIn](https://de.linkedin.com/in/tobias-rausch-48659a80). Publications are listed on [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ), [publons](https://publons.com/researcher/1172942/tobias-rausch/), [Web of Science](https://publons.com/researcher/H-6511-2019/) and [ORCID](https://orcid.org/0000-0001-5773-5620).
+Hello. I am Tobias Rausch, a bioinformatician working in computational genomics at [EMBL](https://www.embl.de/). I'm specialized in structural variant discovery, sequence analysis algorithms and software engineering. I am a passionate programmer and most of my code is publicly available on [GitHub](https://github.com/tobiasrausch). More information can be found through [LinkedIn](https://de.linkedin.com/in/tobias-rausch-48659a80). Publications are listed on [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ), [publons](https://publons.com/researcher/1172942/tobias-rausch/), [Web of Science](https://publons.com/researcher/H-6511-2019/) and [ORCID](https://orcid.org/0000-0001-5773-5620).
 
 <span id="badgeCont543"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont543&rid=H-6511-2019"></script></span>
 
