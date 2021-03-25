@@ -17,12 +17,6 @@ A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/e
 
 * [Variant Calling in NGS data]({{ site.url }}/courses/vc/)
 
-A machine learning tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
-Work-in-progress, current chapters:
-
-* [Data Exploration]({{ site.url }}/courses/ml2019/dataExploration.html)
-* [Supervised Learning]({{ site.url }}/courses/ml2019/supervised.html)
-
 ATAC-Seq tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
 
 * [ATAC-Seq Tutorial]({{ site.url }}/courses/atac/)
