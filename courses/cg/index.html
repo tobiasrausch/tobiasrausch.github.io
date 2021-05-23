@@ -51,6 +51,7 @@
     <br>
     The different research groups in the 1000 Genomes project predicted genomic deletions in these 2504 samples. As usual, some predictions (hopefully the majority) will be true and other predicted deletions will be false for various reasons (mis-mappings, bugs in the algorithms, incomplete reference sequence, etc.). I have annotated a subset of the deletion predictions where we have prior validation information on as likely true (status = 1) and as likely false (status = 0). I then computed a list of features for these deletions that you can later use in your machine learning models to predict for the unlabeled deletions whether these are likely true or likely false. Below is a brief explanation for each feature.
     <br>
+    <br>
     Features
     <br>
     <ul>
@@ -71,8 +72,14 @@
       <li>status: 1 – likely true deletion, 0 – likely false deletion, NA – unlabeled (deletion could be true or false)</li>
     </ul>
     <br>
-    My very simple example approach to predict the status of unlabeled deletions (true/false) is based on the genotyping quality of deletion carriers (altgq). An Rscript for this approach is available here. Please change this Rscript with your favorite machine learning technique and ideally improve my very simplistic decision tree approach. Once you are done please commit your Rscript to your GitHub repository from the Cancer Genomics exercise in a new subfolder. Please also include some comments either as a separate Markdown file or within the code. If you prefer to use a different programming language to run your machine learning models you are welcome to do so. The deadline for this exercise is 8th June 2021, please email me again your GitHub repository URL once you are done. Thanks.
-
+    My very simple example approach to predict the status of unlabeled deletions (true/false) is based on the genotyping quality of deletion carriers (altgq). An Rscript for this approach is available <a href="https://gear.embl.de/data/.slides/decision_tree.r">here</a>. Please change this Rscript with your favorite machine learning technique and ideally improve my very simplistic decision tree approach. Once you are done please commit your Rscript to your GitHub repository from the Cancer Genomics exercise in a new subfolder. Please also include some comments either as a separate Markdown file or within the code. If you prefer to use a different programming language to run your machine learning models you are welcome to do so. The deadline for this exercise is 8th June 2021, please email me again your GitHub repository URL once you are done. Thanks.
+    <br>
+    <br>
+    Resources
+    <ul>
+      <li><a href="https://gear.embl.de/data/.slides/decision_tree.r">Example Rscript</a></li>
+      <li><a href="https://gear.embl.de/data/.slides/deletion.tsv.gz">Input feature table</a></li>
+    </ul>
     
     <h3>Useful links</h3>
     
