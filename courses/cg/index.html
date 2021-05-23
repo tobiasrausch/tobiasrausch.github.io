@@ -41,6 +41,37 @@
     <br>
     **Optional**: Once you have successfully computed a read-depth plot you may also want to call structural variants and overlay these with the read-depth plot or call germline variants and annotate these with functional consequences (<a href="https://gear.embl.de/data/.slides/exercise_rausch.pdf">Slides</a>).
 
+
+    <h3>Machine Learning Programming Exercise (due date 8th June 2021)</h3>
+    In 2015, the 1000 Genomes Project published a map of genomic structural variants for 2504 individuals sampled from different parts of the world (<a href="https://www.nature.com/articles/nature15394">Paper</a>). The simplest structural variant is a deletion, where a long stretch of DNA is missing in one sample with respect to the human reference genome. For the 1000 Genomes Project we were specifically interested in cataloging these deletions, basically finding out where they are in the genome and how many people among the 2504 individuals share the same deletion. As an example, you can see below a deletion visualized in <a href="https://software.broadinstitute.org/software/igv/">IGV</a> where one individual (shown in the upper panel) is a heterozygous carrier of the deletion (marked as a red bar at the top) and the lower panel shows an individual that is not a carrier of this deletion.
+    <br>
+    <img src="DEL00072515.png" alt="Deletion">
+    The alignment signals that structural variant prediction algorithms evaluate are a change in read-depth because one haplotype is lost (see coverage drop in IGV), read-pairs that span the deletion and have an insert size larger than expected (read pairs colored in red in IGV) and reads that have a prefix alignment before the start of the deletion or a suffix alignment after the deletion (the colorful bases in IGV are the trimmed portions of reads not mapped because of the deletion).
+    <br>
+    The different research groups in the 1000 Genomes project predicted genomic deletions in these 2504 samples. As usual, some predictions (hopefully the majority) will be true and other predicted deletions will be false for various reasons (mis-mappings, bugs in the algorithms, incomplete reference sequence, etc.). I have annotated a subset of the deletion predictions where we have prior validation information on as likely true (status = 1) and as likely false (status = 0). I then computed a list of features for these deletions that you can later use in your machine learning models to predict for the unlabeled deletions whether these are likely true or likely false. Below is a brief explanation for each feature.
+    <br>
+    Features
+    <br>
+    <ul>
+      <li>size: Size of the deletion</li>
+      <li>vac: How many alleles have the deletion (2504 diploid samples -> 5008 alleles in total)</li>
+      <li>vaf: Allele frequency (simply vac/5008)</li>
+      <li>pass: 1 - Deletion prediction passed all algorithm filters, 0 – deletion did not pass all filters</li>
+      <li>missingrate: Fraction of samples not genotyped for this deletion</li>
+      <li>precise: 1 - The deletion has single-nucleotide resolution, 0 - only approximate breakpoints are known</li>
+      <li>ci: Confidence interval size around the deletion breakpoints (how sure is the algorithm about the breakpoint)</li>
+      <li>ce: DNA sequence entropy of the deletion</li>
+      <li>refgq: Average genotype quality of homozygous reference samples</li>
+      <li>altgq: Average genotype quality of deletion carrier samples</li>
+      <li>rdratio: Read-depth ratio of deletion carriers compared to deletion non-carriers</li>
+      <li>altratio: Average fraction of reads supporting the deletion in a carrier sample</li>
+      <li>refratio: Average fraction of reads supporting the deletion in a non-carrier sample</li>
+      <li>maxaltratio: Maximum fraction of reads supporting the deletion in a carrier sample</li>
+      <li>status: 1 – likely true deletion, 0 – likely false deletion, NA – unlabeled (deletion could be true or false)</li>
+    </ul>
+    <br>
+    My very simple example approach to predict the status of unlabeled deletions (true/false) is based on the genotyping quality of deletion carriers (altgq). An Rscript for this approach is available here. Please change this Rscript with your favorite machine learning technique and ideally improve my very simplistic decision tree approach. Once you are done please commit your Rscript to your GitHub repository from the Cancer Genomics exercise in a new subfolder. Please also include some comments either as a separate Markdown file or within the code. If you prefer to use a different programming language to run your machine learning models you are welcome to do so. The deadline for this exercise is 8th June 2021, please email me again your GitHub repository URL once you are done. Thanks.
+
     
     <h3>Useful links</h3>
     
