@@ -47,10 +47,12 @@ title: Software
 
 ---
 
-[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/rdxon/blob/master/LICENSE)
-[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/rdxon.svg)](https://github.com/tobiasrausch/rdxon/releases)
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/wally/README.html)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/wally/badges/downloads.svg)](https://anaconda.org/bioconda/wally)
+[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/wally/blob/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/wally.svg)](https://github.com/tobiasrausch/wally/releases)
 
-[rdxon](https://github.com/tobiasrausch/rdxon/): Rapid method to filter FASTQ files for reads containing k-mers absent in the entire 1000 Genomes sequencing data. Suitable to discover disease-causing mutations in rare disorders independent of any reference genome.
+[Wally](https://github.com/tobiasrausch/wally/): Visualization of aligned sequencing reads and genomic variants.
 
 ---
 
