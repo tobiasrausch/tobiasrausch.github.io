@@ -4,6 +4,8 @@ layout: default
 permalink: "/projects/"
 ---
 
+Selected publications (full list: [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ)).
+
 ## Population Genomics
 
 [![DOI:10.1038/nature15394](https://zenodo.org/badge/DOI/10.1038/nature15394.svg)](https://doi.org/10.1038/nature15394)
@@ -15,6 +17,12 @@ permalink: "/projects/"
 [![DOI:10.1038/s41467-018-08148-z](https://zenodo.org/badge/DOI/10.1038/s41467-018-08148-z.svg)](https://doi.org/10.1038/s41467-018-08148-z)
 
 [Haplotype-resolved Stuctural Variant Calling](https://www.nature.com/articles/s41467-018-08148-z): Multi-platform discovery of haplotype-resolved structural variation in human genomes.
+
+---
+
+[![DOI:10.1126/science.abf7117](https://zenodo.org/badge/DOI/10.1126/science.abf7117.svg)](https://doi.org/10.1126/science.abf7117)
+
+[Haplotype-resolved Human Genomes](https://doi.org/10.1126/science.abf7117): Haplotype-resolved diverse human genomes and integrated analysis of structural variation.
 
 ---
 
@@ -50,6 +58,7 @@ permalink: "/projects/"
 
 ---
 
+
 ## Rare Diseases
 
 [![DOI:10.1016/j.jaci.2013.02.012](https://zenodo.org/badge/DOI/10.1016/j.jaci.2013.02.012.svg)](https://doi.org/10.1016/j.jaci.2013.02.012)
@@ -58,7 +67,9 @@ permalink: "/projects/"
 
 ---
 
-[rdxon](https://github.com/tobiasrausch/rdxon/): Rapid method to filter FASTQ files for reads containing k-mers absent in the entire 1000 Genomes sequencing data. Suitable to discover disease-causing mutations in rare disorders independent of any reference genome.
+[![DOI:10.1182/blood.2021013519](https://zenodo.org/badge/DOI/10.1182/blood.2021013519.svg)](https://doi.org/10.1182/blood.2021013519)
+
+[Novel subtype of hemochromatosis](https://doi.org/10.1182/blood.2021013519): Constitutional PIGA mutations cause a novel subtype of hemochromatosis in patients with neurologic dysfunction
 
 ---
 
