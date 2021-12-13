@@ -3,7 +3,7 @@ layout: default
 title: Software
 ---
 
-## Methods for Computational Genomics
+## Methods for Computational Genomics ([GitHub profile](https://github.com/tobiasrausch/))
 
 ---
 

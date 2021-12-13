@@ -4,9 +4,7 @@ layout: default
 permalink: "/projects/"
 ---
 
-Selected publications (full list: [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ)).
-
-## Population Genomics
+## Selected Publications ([Google Scholar profile](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ))
 
 [![DOI:10.1038/nature15394](https://zenodo.org/badge/DOI/10.1038/nature15394.svg)](https://doi.org/10.1038/nature15394)
 
@@ -26,7 +24,7 @@ Selected publications (full list: [Google Scholar](https://scholar.google.de/cit
 
 ---
 
-## Cancer Genomics
+## Cancer Genomics Publications
 
 [![DOI:10.1016/j.cell.2011.12.013](https://zenodo.org/badge/DOI/10.1016/j.cell.2011.12.013.svg)](https://doi.org/10.1016/j.cell.2011.12.013)
 
@@ -59,7 +57,7 @@ Selected publications (full list: [Google Scholar](https://scholar.google.de/cit
 ---
 
 
-## Rare Diseases
+## Rare Disease Publications
 
 [![DOI:10.1016/j.jaci.2013.02.012](https://zenodo.org/badge/DOI/10.1016/j.jaci.2013.02.012.svg)](https://doi.org/10.1016/j.jaci.2013.02.012)
 
@@ -102,7 +100,7 @@ Selected publications (full list: [Google Scholar](https://scholar.google.de/cit
 
 ---
 
-## SeqAn
+## SeqAn Contributions
 
 [![DOI:10.1186/1471-2105-9-11](https://zenodo.org/badge/DOI/10.1186/1471-2105-9-11.svg)](https://doi.org/10.1186/1471-2105-9-11)
 
