@@ -56,6 +56,20 @@ title: Software
 
 ---
 
+[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/lorax/blob/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/lorax/releases)
+
+[Lorax](https://github.com/tobiasrausch/lorax/): A long-read analysis toolbox for cancer genomics
+
+---
+
+[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/rayas/blob/master/LICENSE)
+[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/rayas/releases)
+
+[Rayas](https://github.com/tobiasrausch/rayas/): Discovery of templated insertion threads
+
+---
+
 ## GEAR: [www.gear-genomics.com](https://www.gear-genomics.com)
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
