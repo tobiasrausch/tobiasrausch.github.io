@@ -100,6 +100,12 @@ permalink: "/projects/"
 
 ---
 
+[![DOI:10.1093/bioinformatics/btz719](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btz719.svg)](https://doi.org/10.1093/bioinformatics/btz719)
+
+[Visor](https://github.com/davidebolo1993/VISOR/): Variant simulator for short, long and linked reads
+
+---
+
 ## SeqAn Contributions
 
 [![DOI:10.1186/1471-2105-9-11](https://zenodo.org/badge/DOI/10.1186/1471-2105-9-11.svg)](https://doi.org/10.1186/1471-2105-9-11)
