@@ -6,6 +6,12 @@ permalink: "/projects/"
 
 ## Selected Publications ([Google Scholar profile](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ))
 
+[![DOI:10.1101/2022.02.20.480758](https://zenodo.org/badge/DOI/10.1101/2022.02.20.480758.svg)](https://doi.org/10.1101/2022.02.20.480758)
+
+[Long-read sequencing of a cancer genome](https://doi.org/10.1101/2022.02.20.480758): Long-read sequencing of diagnosis and post-therapy medulloblastoma reveals complex rearrangement patterns and epigenetic signatures.
+
+---
+
 [![DOI:10.1038/nature15394](https://zenodo.org/badge/DOI/10.1038/nature15394.svg)](https://doi.org/10.1038/nature15394)
 
 [1000 Genomes Structural Variant Calling](https://www.nature.com/articles/nature15394): A catalogue of human genetic structural variation.
