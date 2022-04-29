@@ -59,6 +59,15 @@
 	bcftools view calls.bcf | grep -A 2 -m 1 "^#CHROM"
     </code></pre>
     
+    <h3>Step 3: Variant Annotation</h3>
+
+    Tools such as <a href="https://www.ensembl.org/info/docs/tools/vep/index.html">the variant effect predictor (VEP)</a> can be used to determine the <a href="https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html">consequences of genomic variants</a>. Please upload the below list of variants that you called from the alignment to the <a href="https://covid-19.ensembl.org/Tools/VEP">VEP online web application</a>.
+    <pre><code>
+	bcftools view calls.bcf | grep -v "^#" | cut -f 1-5
+    </code></pre>
+
+    Based on the VEP output, we will now try to manually identify the viral lineage (Alpha, Beta, Gamma, Delta, Omicron, etc.) using the predicted amino acid changes in the spike protein (S gene). A nice overview table of the different amino acid changes occurring in the different lineages is available on the <a href="https://outbreak.info/compare-lineages">outbreak.info</a> website.
+    
     
   </body>
 </html>
