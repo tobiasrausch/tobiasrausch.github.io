@@ -24,6 +24,15 @@
 	mkdir ~/Desktop/covid19/tmp
 	cd ~/Desktop/covid19/tmp
     </code></pre>
-	
+
+    The FASTQ files are in the data subdirectory and the SARS-CoV-2 reference is in the ref subdirectory.
+    <pre><code>
+	ls ../data/
+	ls ../ref/NC_045512.2.fa
+	head ../ref/NC_045512.2.fa
+    </code></pre>
+
+    We can use <a href="https://github.com/lh3/bwa">bwa</a> to align the sequencing data to the SARS-CoV-2 reference genome.
+    
   </body>
 </html>
