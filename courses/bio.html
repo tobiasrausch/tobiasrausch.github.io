@@ -67,6 +67,16 @@
     </code></pre>
 
     Based on the VEP output, we will now try to manually identify the viral lineage (Alpha, Beta, Gamma, Delta, Omicron, etc.) using the predicted amino acid changes in the spike protein (S gene). A nice overview table of the different amino acid changes occurring in the different lineages is available on the <a href="https://outbreak.info/compare-lineages">outbreak.info</a> website.
+
+    <h3>Step 4: Lineage classification</h3>
+    After years of the SARS-CoV-2 pandemic, we have of course tools to automatically determine the viral lineage and these usually require a so-called consensus sequence of the alignment. Tools such as <a href="https://github.com/andersen-lab/ivar>iVar</a> can generate such a viral consensus genome.
+
+    <pre><code>
+	samtools mpileup -aa -A -d 0 -B -Q 0 align.bam | ivar consensus -t 0.9 -m 20 -n N -p cons
+    </code></pre>
+
+
+    This consensus sequence, we can then use with <a href="https://github.com/cov-lineages/pangolin>pangolin</a> or <a href="https://clades.nextstrain.org/">Nextclade</a> to determine the lineage. <a href="https://clades.nextstrain.org/">Nextclade</a> has an online application that we will use in this tutorial. Please upload the cons.fa file in <a href="https://clades.nextstrain.org/">Nextclade</a> and inspect the output. The tool also offers integrating our sequence into a phylogenetic tree of publicly available SARS-CoV-2 sequences.
     
     
   </body>
