@@ -76,7 +76,13 @@
     </code></pre>
 
 
-    This consensus sequence, we can then use with <a href="https://github.com/cov-lineages/pangolin>pangolin</a> or <a href="https://clades.nextstrain.org/">Nextclade</a> to determine the lineage. <a href="https://clades.nextstrain.org/">Nextclade</a> has an online application that we will use in this tutorial. Please upload the cons.fa file in <a href="https://clades.nextstrain.org/">Nextclade</a> and inspect the output. The tool also offers integrating our sequence into a phylogenetic tree of publicly available SARS-CoV-2 sequences.
+    This consensus sequence, we can then use with <a href="https://github.com/cov-lineages/pangolin>pangolin</a> or <a href="https://clades.nextstrain.org/">Nextclade</a> to determine the lineage.
+
+    <pre><code>
+	pangolin --outfile lineage.csv cons.fa
+    </code></pre>
+	
+    <a href="https://clades.nextstrain.org/">Nextclade</a> has an online application that we can also use to upload the cons.fa file. Nextclade also integrates our sequence into a phylogenetic tree of publicly available SARS-CoV-2 sequences.
     
     
   </body>
