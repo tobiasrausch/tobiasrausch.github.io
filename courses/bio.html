@@ -33,6 +33,19 @@
     </code></pre>
 
     We can use <a href="https://github.com/lh3/bwa">bwa</a> to align the sequencing data to the SARS-CoV-2 reference genome.
+    <pre><code>
+	bwa mem ../ref/NC_045512.2.fa ../data/Plate42B2/Plate42B2.R1.fastq.gz ../data/Plate42B2/Plate42B2.R2.fastq.gz > align.sam
+	head align.sam
+    </code></pre>
+
+    The alignment is encoded in <a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM format</a>. For mammalian-sized genomes alignments are usually stored in a compressed binary format, called BAM, that can be indexed for random access so that, for instance, alignment viewers such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a> can quickly visualize selected alignment regions.
+
+    <pre><code>
+	samtools sort -o align.bam align.sam
+	samtools index align.bam
+    </code></pre>
+
+    
     
   </body>
 </html>
