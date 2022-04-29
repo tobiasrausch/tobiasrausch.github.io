@@ -38,13 +38,26 @@
 	head align.sam
     </code></pre>
 
-    The alignment is encoded in <a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM format</a>. For mammalian-sized genomes alignments are usually stored in a compressed binary format, called BAM, that can be indexed for random access so that, for instance, alignment viewers such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a> can quickly visualize selected alignment regions. <a href="https://github.com/samtools/samtools">SAMtools</a> is a suite of tools that can be used to work with alignment files.
+    The alignment is encoded in <a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM format</a>. For mammalian-sized genomes, alignments are usually stored in a compressed binary format, called BAM, that can be indexed for random access so that, for instance, alignment viewers such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a> can quickly visualize selected alignment regions. <a href="https://github.com/samtools/samtools">SAMtools</a> is a suite of tools that can be used to work with alignment files.
 
     <pre><code>
 	samtools sort -o align.bam align.sam
 	samtools index align.bam
     </code></pre>
 
+    Once you have an alignment file it is always a good idea to look at the raw data in an alignment viewer such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a>.
+    <pre><code>
+	../IGV_Linux_2.12.3/igv.sh -g ../ref/NC_045512.2.fa
+    </code></pre>
+
+    <h3>Step 2: Variant Calling</h3>
+
+    Next, we want to transform the alignment into a list of variants. Hence, we are trying to identify positions, where the sequenced sample deviates from the SARS-CoV-2 reference genome. Variants are stored in <a href="https://en.wikipedia.org/wiki/Variant_Call_Format">VCF format</a>.
+    <pre><code>
+	bcftools mpileup -f ../ref/NC_045512.2.fa align.bam | bcftools call -mv -Ob -o calls.bcf
+	bcftools view calls.bcf
+	bcftools view calls.bcf | grep -A 2 -m 1 "^#CHROM"
+    </code></pre>
     
     
   </body>
