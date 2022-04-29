@@ -38,7 +38,7 @@
 	head align.sam
     </code></pre>
 
-    The alignment is encoded in <a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM format</a>. For mammalian-sized genomes alignments are usually stored in a compressed binary format, called BAM, that can be indexed for random access so that, for instance, alignment viewers such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a> can quickly visualize selected alignment regions.
+    The alignment is encoded in <a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM format</a>. For mammalian-sized genomes alignments are usually stored in a compressed binary format, called BAM, that can be indexed for random access so that, for instance, alignment viewers such as <a href="https://software.broadinstitute.org/software/igv/">IGV</a> can quickly visualize selected alignment regions. <a href="https://github.com/samtools/samtools">SAMtools</a> is a suite of tools that can be used to work with alignment files.
 
     <pre><code>
 	samtools sort -o align.bam align.sam
