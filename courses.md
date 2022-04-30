@@ -4,14 +4,12 @@ layout: default
 permalink: "/courses/"
 ---
 
-## On-site Trainings
+## On-site and virtual trainings
 
-Once per year, I am one of the teachers for the "Cancer Genomics" course at the EBI and the "Clinical Genomics and NGS" course in Bertinoro.
+* [Methods in Genomic Variant Calling](https://www.youtube.com/watch?v=zO9WCOaq3aQ)
+* [Cancer Genomics](https://www.ebi.ac.uk/training/events/cancer-genomics-2022/)
 
-* [Cancer Genomics](https://www.ebi.ac.uk/training/events/2019/cancer-genomics-4)
-* [Clinical Genomics and NGS](http://ceub.it/events/event/clinical-genomics-and-ngs-3/)
-
-## Online courses
+## Course Materials
 
 A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/ekg/freebayes) and [Delly](https://github.com/dellytools/delly).
 
