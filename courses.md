@@ -18,3 +18,7 @@ A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/e
 ATAC-Seq tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
 
 * [ATAC-Seq Tutorial]({{ site.url }}/courses/atac/)
+
+SARS-CoV-2 lineage classification
+
+* [SARS-CoV-2 Tutorial]({{ site.url }}/courses/sars/)
