@@ -13,7 +13,7 @@ permalink: "/courses/"
 
 A tutorial on variant calling in NGS data using [FreeBayes](https://github.com/ekg/freebayes) and [Delly](https://github.com/dellytools/delly).
 
-* [Variant Calling in NGS data]({{ site.url }}/courses/vc/)
+* [Variant Calling in NGS data](https://github.com/tobiasrausch/vc/)
 
 ATAC-Seq tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz](https://github.com/mhyfritz).
 
