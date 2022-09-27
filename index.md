@@ -56,6 +56,9 @@ title: Software
 
 ---
 
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/lorax/README.html)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/lorax/badges/downloads.svg)](https://anaconda.org/bioconda/lorax)
+
 [![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/lorax/blob/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/lorax/releases)
 
