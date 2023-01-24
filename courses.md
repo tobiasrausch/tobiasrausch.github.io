@@ -6,8 +6,8 @@ permalink: "/courses/"
 
 ## On-site and virtual trainings
 
-* [Methods in Genomic Variant Calling](https://www.youtube.com/watch?v=zO9WCOaq3aQ)
-* [Cancer Genomics](https://www.ebi.ac.uk/training/events/cancer-genomics-2022/)
+* [Methods in Genomic Variant Calling (Webinar video)](https://www.youtube.com/watch?v=zO9WCOaq3aQ)
+* [Cancer Genomics 2023](https://www.ebi.ac.uk/training/events/cancer-genomics-transcriptomics/)
 
 ## Course Materials
 
