@@ -10,20 +10,22 @@
 
     <h3>Course Content</h3>
 
-    This course will focus on the analysis of data from cancer genomics studies. Bioinformatic concepts, tools and methods required to analyse tumor sequencing data will be introduced. Learning outcomes include an overview of the challenges in the study of cancer genomics, discovery and visualisation of copy-number and structural variants, understanding the principles of tumor purity, heterogeneity and ploidy and an overview of cancer epigenetics. Practical data analysis sessions will complement the course.
+    This course will focus on the analysis of short-read and long-read sequencing data from cancer genomics studies. Bioinformatic concepts, tools and methods required to analyse tumor sequencing data will be introduced. Learning outcomes include an overview of the challenges in the study of cancer genomics, discovery and visualisation of copy-number and structural variants, understanding the principles of tumor purity, heterogeneity and ploidy and an overview of cancer epigenetics. The course covers different sequencing data modalities (short-reads vs. long-reads) and data types (bulk vs. single-cell). Practical data analysis sessions will complement the course.
 
     <h3>Schedule</h3>
 
     <ul>
-      <li>Tuesday 8th March, 1pm-2.30pm: Genome Variation, <a href="https://gear.embl.de/data/.slides/Lecture1_GenomeVariation.pdf">Slides</a></li>
-      <li>Tuesday 15th March, 1pm-2.30pm: Cancer Genomics, <a href="https://gear.embl.de/data/.slides/Lecture2_CancerGenomics.pdf">Slides</a></li>
-      <li>Tuesday 22th March, 1pm-2.30pm: Variant Calling Exercise, <a href="https://gear.embl.de/data/.slides/Lecture3_MultiOmics.pdf">Slides</a></li>
-      <li>Tuesday 29th March, 1pm-2.30pm: Cancer Epigenetics, <a href="https://gear.embl.de/data/.slides/Lecture4_Epigenetics.pdf">Slides</a></li>
-      <li>Tuesday 5th April, 1pm-2.30pm: Structural Variants, <a href="https://gear.embl.de/data/.slides/Lecture5_StructuralVariants.pdf">Slides</a></li>
-      <li>Tuesday 12th April, 1pm-2.30pm: Machine Learning, <a href="https://gear.embl.de/data/.slides/Lecture6_MachineLearning.pdf">Slides</a></li>
-      <li>Tuesday 19th April, 1pm-2.30pm: Machine Learning in R, <a href="https://tobiasrausch.com/courses/cg/exploration.html">Data Exploration</a>, <a href="https://tobiasrausch.com/courses/cg/regression.html">Regression</a>, <a href="https://tobiasrausch.com/courses/cg/supervised.html">Supervised Learning</a></li>
-      <li>Tuesday 26th April, 1pm-2.30pm: Long reads in Cancer Genomics, <a href="https://gear.embl.de/data/.slides/Lecture7_LongReads.pdf">Slides</a></li>
-      <li>Tuesday 3rd May, 1pm-2.30pm: Journal Club, Cancer Genomics Papers (Vinicna 7, room B333).</li>
+      <li>Thursday 16th March, 2pm-3.30pm: Genome Variation, <a href="https://gear.embl.de/data/.slides/Lecture1_GenomeVariation.pdf">Slides</a></li>
+      <li>Thursday 23th March, 2pm-3.30pm: Cancer Genomics</li>
+      <li>Thursday 30th March, 2pm-3.30pm: Mutation Calling (Exercise Discussion)</li>
+      
+      <li>Thursday 6th April, 2pm-3.30pm: Cancer Epigenetics</li>
+      <li>Thursday 13th April, 2pm-3.30pm: Structural Variants and copy-number variants</li>
+      <li>Thursday 20th April, 2pm-3.30pm: Long reads in cancer genomics (Excercis Discussion)</li>
+      <li>Thursday 20th April, 2pm-3.30pm: Genome assembly</li>
+      <li>Thursday 27th April, 2pm-3.30pm: Pan-genome graphs</li>
+      <li>Thursday 4th May, 2pm-3.30pm: Single-cell analysis</li>
+      <li>Thursday 11th May, 2pm-3.30pm: Journal Club, Cancer Genomics Papers (Prague, Vinicna 7, room TBD).</li>
     </ul>
 
     <h3>Exercise 1: Sars-CoV-2 Lineage Determination (due date 5th April 2022)</h3>
@@ -37,21 +39,6 @@
       <li>Data set 2, <a href="https://gear.embl.de/data/.slides/Plate135H10.R2.fastq.gz">Read2</a></li>
     </ul>
     
-    <h3>Exercise 2: Cancer Genomics Data Analysis (due date 19th April 2022)</h3>
-    In this exercise we want to analyze a cancer genomics sample (a paired tumor-control sample set). This is a simulated Medulloblastoma sample with a matched control.
-    You can download the data set <a href="https://gear.embl.de/data/.exercise/">here</a>.
-    The main objective of this exercise is to align the data to the human reference genome (<a href="https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz">https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz</a>), to sort and index the alignments and to generate a read-depth plot, as discussed in the lectures.
-    Please note that I downsampled the dataset and I also just kept the data for chromosome X from 20Mbp to 40Mbp (GRCh37/hg19 coordinates) because otherwise all analysis take a lot of time for a human genome.
-    Once you have generated the alignment in BAM format you can subset the BAM to the region of interest using `samtools view -b input.bam chrX:20000000-40000000 > output.bam`.
-    <br>
-    Please write-up your analysis pipeline using <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a>.
-    You can, of course, in additon use the Github repository to store your analysis scripts in your favorite language, i.e., this could be bash scripts, <a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a> or <a href="https://www.nextflow.io/">Nextflow</a> pipelines, <a href="https://www.r-project.org/">R</a> or <a href="https://www.python.org/">python</a> scripts.
-    Likewise feel free to check-in a Makefile or a requirements file for <a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">Bioconda</a> if you use these to install tools.
-    At the very minimum the repository should contain the produced read-depth plot and a README.md file that explains the steps you have executed to generate the read-depth plot.
-    Once you are done please email me again the repository link. Thanks.
-    <br>
-    **Optional**: Once you have successfully computed a read-depth plot you may also want to call structural variants and overlay these with the read-depth plot or call germline variants and annotate these with functional consequences.
-        
     <h3>Useful links</h3>
     
     Below are a couple of links to commonly used Bioinformatics tools in Cancer Genomics (certainly not comprehensive).
@@ -78,12 +65,12 @@
       <li><a href="https://github.com/tobiasrausch/alfred">alfred</a></li>
       <li><a href="https://github.com/samtools/samtools">SAMtools</a></li>
     </ul>
-    Tools for short variant calling (point mutations and short insertions and deletions)
+    Tools for short variant calling, i.e., point mutations (SNVs) and short insertions and deletions (InDels)
     <ul>
       <li><a href="https://github.com/Illumina/strelka">Strelka</a></li>
       <li><a href="https://github.com/freebayes/freebayes">FreeBayes</a></li>
     </ul>
-    Tools for structural variant calling
+    Tools for structural variant (SV) calling
     <ul>
       <li><a href="https://github.com/dellytools/delly">delly</a></li>
       <li><a href="https://github.com/arq5x/lumpy-sv">lumpy</a></li>
