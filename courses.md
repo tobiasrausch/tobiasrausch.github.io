@@ -19,6 +19,3 @@ ATAC-Seq tutorial in R Statistics with contributions from [Markus Hsi-Yang Fritz
 
 * [ATAC-Seq Tutorial]({{ site.url }}/courses/atac/)
 
-SARS-CoV-2 lineage classification
-
-* [SARS-CoV-2 Tutorial]({{ site.url }}/courses/sars/)
