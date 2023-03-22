@@ -27,6 +27,18 @@
       <li>Thursday 11th May, 2pm-3.30pm: Journal Club, Cancer Genomics Papers (Prague, Vinicna 7, room TBD).</li>
     </ul>
 
+    <h3>Exercise 1: Sars-CoV-2 Lineage Determination (due date 5th April 2022)</h3>
+
+    Please create a GitHub account or login to your existing account and create a new repository to analyse SARS-CoV-2 amplicon sequencing data. The goal of this exercise is to create a simple variant calling workflow for SARS-CoV-2 and please describe the steps of your workflow using markdown (<a href="https://docs.github.com/en/get-started/writing-on-github">GitHub Markdown</a>). The workflow should contain steps to align the FASTQ files to the SARS-CoV-2 reference genome (<a href="https://github.com/lh3/bwa">bwa</a>), call variants (<a href="https://samtools.github.io/bcftools/howtos/variant-calling.html">bcftools</a>) and annotate variants (<a href="https://covid-19.ensembl.org/Tools/VEP">VEP</a>). Alternatively, you can also create a consensus sequence (<a href="https://samtools.github.io/bcftools/howtos/consensus-sequence.html">bcftools</a>) and classify the lineage (<a href="https://clades.nextstrain.org/">nextclade</a>). Determine the most likely SARS-CoV-2 lineage (Alpha, Beta, Gamma, Delta or Omicron) for the below 2 data sets using the variant calls and/or the consensus sequence and send me the repository URL of your GitHub repository via email.
+
+    <ul>
+      <li>SARS-CoV-2 reference, <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta">Reference</a></li>
+      <li>Data set 1, <a href="https://gear.embl.de/data/.slides/Plate42B2.R1.fastq.gz">Read1</a></li>
+      <li>Data set 1, <a href="https://gear.embl.de/data/.slides/Plate42B2.R2.fastq.gz">Read2</a></li>
+      <li>Data set 2, <a href="https://gear.embl.de/data/.slides/Plate135H10.R1.fastq.gz">Read1</a></li>
+      <li>Data set 2, <a href="https://gear.embl.de/data/.slides/Plate135H10.R2.fastq.gz">Read2</a></li>
+    </ul>
+
     <h3>Useful links</h3>
     
     Below are a couple of links to commonly used Bioinformatics tools in Cancer Genomics (certainly not comprehensive).
