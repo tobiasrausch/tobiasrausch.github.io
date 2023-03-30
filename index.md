@@ -51,6 +51,7 @@ title: Software
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/wally/badges/downloads.svg)](https://anaconda.org/bioconda/wally)
 [![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/wally/blob/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/wally.svg)](https://github.com/tobiasrausch/wally/releases)
+[![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
 
 [Wally](https://github.com/tobiasrausch/wally/): Visualization of aligned sequencing reads and genomic variants.
 
@@ -60,6 +61,7 @@ title: Software
 [![Anaconda-Server Badge](https://anaconda.org/bioconda/lorax/badges/downloads.svg)](https://anaconda.org/bioconda/lorax)
 [![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/lorax/blob/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/lorax/releases)
+[![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
 
 [Lorax](https://github.com/tobiasrausch/lorax/): A long-read analysis toolbox for cancer genomics
 
@@ -67,6 +69,7 @@ title: Software
 
 [![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/rayas/blob/master/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/rayas/releases)
+[![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
 
 [Rayas](https://github.com/tobiasrausch/rayas/): Discovery of templated insertion threads
 
