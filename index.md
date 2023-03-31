@@ -53,7 +53,7 @@ title: Software
 [![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/wally.svg)](https://github.com/tobiasrausch/wally/releases)
 [![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
 
-[Wally](https://github.com/tobiasrausch/wally/): Visualization of aligned sequencing reads and genomic variants.
+[Wally](https://github.com/tobiasrausch/wally/): Visualization of aligned sequencing reads and contigs.
 
 ---
 

@@ -106,6 +106,12 @@ permalink: "/projects/"
 
 ---
 
+[![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
+
+[Wally](https://github.com/tobiasrausch/wally/): Visualization of aligned sequencing reads and contigs.
+
+---
+
 [![DOI:10.1093/bioinformatics/btz719](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btz719.svg)](https://doi.org/10.1093/bioinformatics/btz719)
 
 [Visor](https://github.com/davidebolo1993/VISOR/): Variant simulator for short, long and linked reads
