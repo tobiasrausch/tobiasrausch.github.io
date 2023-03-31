@@ -136,4 +136,4 @@ permalink: "/projects/"
 
 A full list of co-authored publications is available on [Google Scholar](https://scholar.google.de/citations?user=fQ1VoZEAAAAJ).
 
-Publications and peer review statistics are also available on [publons](https://publons.com/researcher/1172942/tobias-rausch/).
+Publications and peer review statistics are also available on [ORCID](https://orcid.org/0000-0001-5773-5620).
