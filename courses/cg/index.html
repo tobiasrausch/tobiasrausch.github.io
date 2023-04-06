@@ -38,6 +38,18 @@
       <li>Data set 2, <a href="https://gear.embl.de/data/.slides/Plate135H10.R2.fastq.gz">Read2</a></li>
     </ul>
 
+    <h3>Exercise 2: Cancer Genomics Data Analysis (due date 20th April 2023)</h3>
+    In this exercise we want to analyze a cancer genomics sample, namely a paired tumor-normal sample pair.
+    You can download the data set <a href="https://gear.embl.de/data/.exercise/">here</a>.
+    The main objective of this exercise is to align the data to the human reference genome (<a href="https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz">https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz</a>), to sort and index the alignments and to generate a read-depth plot, as discussed in the lectures. Please note that I downsampled the dataset and I also just kept the data for chromosome X from 20Mbp to 40Mbp (GRCh37/hg19 coordinates) because otherwise all analysis take a lot of time for a human genome. Once you have generated the alignment in BAM format you can subset the BAM to the region of interest using `samtools view -b input.bam chrX:20000000-40000000 > output.bam`.
+    <br>
+    Please write-up your analysis pipeline using <a href="https://guides.github.com/features/mastering-markdown/">GitHub markdown</a> and use your Github repository to store your analysis scripts in your favorite language, i.e., this could be bash scripts, <a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a> or <a href="https://www.nextflow.io/">Nextflow</a> pipelines, <a href="https://www.r-project.org/">R</a> or <a href="https://www.python.org/">python</a> scripts.
+    Likewise feel free to check-in a Makefile or a requirements file for <a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">Bioconda</a> if you use these to install tools.
+    At the very minimum the repository should contain the produced read-depth plot and a README.md file that explains the steps you have executed to generate the read-depth plot.
+    Once you are done please email me again the repository link, thanks!
+    <br>
+    **Optional**: Once you have successfully computed a read-depth plot you may also want to call structural variants and overlay these with the read-depth plot as arcs or points that indicate SV breakpoints.
+    
     <h3>Useful links</h3>
     
     Below are a couple of links to commonly used Bioinformatics tools in Cancer Genomics (certainly not comprehensive).
