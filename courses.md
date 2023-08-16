@@ -8,6 +8,9 @@ permalink: "/courses/"
 
 * [Methods in Genomic Variant Calling (Webinar video)](https://www.youtube.com/watch?v=zO9WCOaq3aQ)
 * [Cancer Genomics 2023](https://www.ebi.ac.uk/training/events/cancer-genomics-transcriptomics/)
+* Analytical methods in cancer and population genomics (Annual M.Sc. Bioinformatics Course, Charles University)
+* Clinical Genomics and NGS (2017-2019)
+* Methods of Functional Genomics
 
 ## Course Materials
 
