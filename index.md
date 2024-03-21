@@ -123,4 +123,4 @@ title: Software
 
 ## GitHub Code Repositories
 
-A full list of open-source software projects I contributed to is available on [GitHub](https://github.com/tobiasrausch/).
+A full list of open-source software projects I contribute to is available on [GitHub](https://github.com/tobiasrausch/).
