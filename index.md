@@ -75,10 +75,11 @@ title: Software
 
 ---
 
-## GEAR: [www.gear-genomics.com](https://www.gear-genomics.com)
+## Web applications for Molecular Biologists - [www.gear-genomics.com](https://www.gear-genomics.com)
 
 [![GitHub stars](https://img.shields.io/github/stars/gear-genomics/indigo.svg?style=social&label=Star&maxAge=2592000)](https://github.com/gear-genomics/indigo/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/gear-genomics/indigo.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/gear-genomics/indigo/network/)
+[![DOI:10.1186/s12864-020-6635-8](https://zenodo.org/badge/DOI/10.1186/s12864-020-6635-8.svg)](https://doi.org/10.1186/s12864-020-6635-8)
 
 [Indigo](https://www.gear-genomics.com/indigo/): Variant Discovery in Chromatogram traces obtained from Sanger sequencing of PCR products
 
@@ -86,6 +87,7 @@ title: Software
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/alfred.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/alfred/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/alfred.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/alfred/network/)
+[![DOI:10.1093/bioinformatics/bty1007](https://zenodo.org/badge/DOI/10.1093/bioinformatics/bty1007.svg)](https://doi.org/10.1093/bioinformatics/bty1007)
 
 [Alfred](https://www.gear-genomics.com/alfred/): Interactive, multi-sample and read-group aware quality control browser for NGS data.
 
@@ -95,6 +97,7 @@ title: Software
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/ATACseq.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/ATACseq.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/ATACseq/network/)
+[![DOI:10.15252/emmm.202012104](https://zenodo.org/badge/DOI/10.15252/emmm.202012104.svg)](https://doi.org/10.15252/emmm.202012104)
 
 [ATAC-Seq Pipeline](https://github.com/tobiasrausch/ATACseq/): Computational workflow to analyze ATAC-Seq data.
 
@@ -102,14 +105,15 @@ title: Software
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/nRex.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/nRex/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/nRex.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/nRex/network/)
+[![DOI:10.3324/haematol.2015.129692](https://zenodo.org/badge/DOI/10.3324/haematol.2015.129692.svg)](https://doi.org/10.3324/haematol.2015.129692)
 
 [DNA Variant Calling](https://github.com/tobiasrausch/nRex/): Computational workflow to analyze DNA whole-genome data and targeted NGS data.
-
 
 ---
 
 [![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/covid19.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/covid19/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/tobiasrausch/covid19.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/tobiasrausch/covid19/network/)
+[![DOI:10.1016/j.meegid.2024.105577](https://doi.org/10.1016/j.meegid.2024.105577.svg)](https://doi.org/10.1016/j.meegid.2024.105577)
 
 [SARS-CoV-2 Analysis Pipeline](https://github.com/tobiasrausch/covid19/): Computational workflow to analyze short-read, whole-genome SARS-CoV-2 data.
 
