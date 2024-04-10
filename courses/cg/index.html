@@ -15,12 +15,12 @@
     <h3>Schedule</h3>
 
     <ul>
-      <li>Thursday 11th April, 12pm-2pm: Course Overview (Zoom), <a href="https://gear.embl.de/data/.slides/CourseOverview.pdf">Slides</a></li>
+      <li>Thursday 11th April, 12pm-2pm: Course Overview (Zoom), <a href="https://gear-genomics.embl.de/data/.slides/CourseOverview.pdf">Slides</a></li>
       <li>Thursday 11th April - Wednesday 24th April: Watch pre-recorded lectures. See email for videos, slides are below.</li>
-      <li><a href="https://gear.embl.de/data/.slides/Lecture1_CancerGenomics.pdf">Lecture1 - Introduction to Cancer Genomics</a></li>
-      <li><a href="https://gear.embl.de/data/.slides/Lecture2_GenomeVariation.pdf">Lecture2 - Genome Variation</a></li>
-      <li><a href="https://gear.embl.de/data/.slides/Lecture3_StructuralVariants.pdf">Lecture3 - Structural Variants</a></li>
-      <li><a href="https://gear.embl.de/data/.slides/Lecture4_Epigenetics.pdf">Lecture4 - Cancer Epigenetics</a></li>
+      <li><a href="https://gear-genomics.embl.de/data/.slides/Lecture1_CancerGenomics.pdf">Lecture1 - Introduction to Cancer Genomics</a></li>
+      <li><a href="https://gear-genomics.embl.de/data/.slides/Lecture2_GenomeVariation.pdf">Lecture2 - Genome Variation</a></li>
+      <li><a href="https://gear-genomics.embl.de/data/.slides/Lecture3_StructuralVariants.pdf">Lecture3 - Structural Variants</a></li>
+      <li><a href="https://gear-genomics.embl.de/data/.slides/Lecture4_Epigenetics.pdf">Lecture4 - Cancer Epigenetics</a></li>
       <li>Wednesday 24th April, 9am-4pm: Biocev day (Lectures and Practicals)</li>
       <li>Thursday 2th May, 12pm-2pm: Single-cell lecture (Zoom)</li>
       <li>Thursday 9th May: Exercises and Questionnaires are due</li>
@@ -32,13 +32,13 @@
 
     <ul>
       <li>Chromosome 7 human reference, <a href="https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr7.fa.gz">chr7</a></li>
-      <li>FASTQ of read1, <a href="https://gear.embl.de/data/.slides/R1.fastq.gz">Read1</a></li>
-      <li>FASTQ of read2, <a href="https://gear.embl.de/data/.slides/R2.fastq.gz">Read2</a></li>
+      <li>FASTQ of read1, <a href="https://gear-genomics.embl.de/data/.slides/R1.fastq.gz">Read1</a></li>
+      <li>FASTQ of read2, <a href="https://gear-genomics.embl.de/data/.slides/R2.fastq.gz">Read2</a></li>
     </ul>
 
     <h3>Exercise 2: Cancer Genomics Data Analysis (due date 24th April 2024)</h3>
     In this exercise we want to analyze a cancer genomics sample, namely a paired tumor-normal sample pair.
-    You can download the data set <a href="https://gear.embl.de/data/.exercise/">here</a>.
+    You can download the data set <a href="https://gear-genomics.embl.de/data/.exercise/">here</a>.
     The main objective of this exercise is to align the data to the human reference genome (<a href="https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz">https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz</a>), to sort and index the alignments and to generate a read-depth plot, as discussed in the lectures. Please note that I downsampled the dataset and I also just kept the data for chromosome X from 20Mbp to 40Mbp (GRCh37/hg19 coordinates) because otherwise all analysis take a lot of time for a human genome. Once you have generated the alignment in BAM format you can subset the BAM to the region of interest using `samtools view -b input.bam chrX:20000000-40000000 > output.bam`.
     <br>
     Please write-up your analysis pipeline using <a href="https://guides.github.com/features/mastering-markdown/">GitHub markdown</a> and use your Github repository to store your analysis scripts in your favorite language, i.e., this could be bash scripts, <a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a> or <a href="https://www.nextflow.io/">Nextflow</a> pipelines, <a href="https://www.r-project.org/">R</a> or <a href="https://www.python.org/">python</a> scripts.
@@ -50,9 +50,9 @@
 
 
     <h3>Exercise 3: Working with count matrices (due date 9th May 2024)</h3>
-    In this exercise we want to run a differential gene expression analysis using an RNA-Seq count matrix (<a href="https://gear.embl.de/data/.slides/sample.counts">sample.counts</a>).
-    The sample metadata is available here: <a href="https://gear.embl.de/data/.slides/sample.info">sample.info</a>.
-    Starting from an <a href="https://gear.embl.de/data/.slides/template.R">Rscript template</a> please run a differential expression analysis, generate PCA, Heatmap and MA-plots and export the results into a CSV file.
+    In this exercise we want to run a differential gene expression analysis using an RNA-Seq count matrix (<a href="https://gear-genomics.embl.de/data/.slides/sample.counts">sample.counts</a>).
+    The sample metadata is available here: <a href="https://gear-genomics.embl.de/data/.slides/sample.info">sample.info</a>.
+    Starting from an <a href="https://gear-genomics.embl.de/data/.slides/template.R">Rscript template</a> please run a differential expression analysis, generate PCA, Heatmap and MA-plots and export the results into a CSV file.
     Once you are done please upload your Rscript to your GitHub repository and email me again the repository link, thanks!
     <br>
     **Optional**: You may also want to run a gene set enrichment analysis on the differentially expressed genes.
