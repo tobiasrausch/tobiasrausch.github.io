@@ -14,8 +14,12 @@ permalink: "/courses/"
 
 ## Course Materials
 
-A tutorial on variant calling in next-generation sequencing data using [FreeBayes](https://github.com/ekg/freebayes) and [Delly](https://github.com/dellytools/delly).
+Tutorials for structural variant discovery in short- and long-read sequencing data using [Delly](https://github.com/dellytools/delly) are available here:
 
-* [Variant Calling in NGS data](https://github.com/tobiasrausch/vc/)
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/vc.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/vc/stargazers/)
 
+* [Structural variant calling using short-reads](https://github.com/tobiasrausch/vc/)
 
+[![GitHub stars](https://img.shields.io/github/stars/tobiasrausch/sv.svg?style=social&label=Star&maxAge=2592000)](https://github.com/tobiasrausch/sv/stargazers/)
+
+* [Structural variant calling using long-reads](https://github.com/tobiasrausch/sv/)
