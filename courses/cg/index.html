@@ -18,9 +18,14 @@
       <li>Friday 22th November, 12:20pm-2pm: Lecture1 - Introduction to Cancer Genomics (Zoom, Part1), <a href="https://gear-genomics.embl.de/data/.slides/Lecture1_CancerGenomics.pdf">Slides</a></li>
       <li>Friday 29th November, 12:20pm-2pm: Lecture2 - Introduction to Cancer Genomics (Zoom, Part2), <a href="https://gear-genomics.embl.de/data/.slides/Lecture1_CancerGenomics.pdf">Slides</a></li>
       <li>Friday 6th December, 12:20pm-2pm: Lecture3 - Structural Variants, <a href="https://gear-genomics.embl.de/data/.slides/Lecture3_StructuralVariants.pdf">Slides</a></li>
+      <li>Friday 13th December, 12:20pm-2pm: Lecture4 - Long-read and pan-genome graphs, <a href="https://gear-genomics.embl.de/data/.slides/Lecture4_LongReads.pdf">Slides</a></li>
+      <li>Friday 20th December: No lecture!</li>
+      <li>Friday 27th December: No lecture!</li>
+      <li>Friday 3rd January: No lecture!</li>
+      <li>Friday 10th January, 12:20pm-2pm: Last lecture of the course!</li>
     </ul>
 
-    <h3>Exercise 1: Variant Calling</h3>
+    <h3>Exercise 1: Variant Calling (due 10th January 2025)</h3>
 
     The goal of this exercise is to create a simple variant calling workflow for human sequencing data of a simulated rare disease case. The workflow should contain steps to align the FASTQ files to the human reference genome (<a href="https://github.com/lh3/bwa">bwa</a>), call variants (<a href="https://samtools.github.io/bcftools/howtos/variant-calling.html">bcftools</a>) and annotate all single-nucleotide variants with (<a href="https://www.ensembl.org/Tools/VEP">VEP</a>). For this excercise you can ignore all short insertions and deletions and also structural variants. We are only interested in single-nucleotide variants (SNVs).Once you have finished the exercise, please send me the identified pathogenic variant using this <a href="https://forms.gle/B3azUnBxLJ4tFXN6A">google form</a> and don't forget to provide your email address that you used to register for the course.
 
@@ -30,6 +35,23 @@
       <li>FASTQ of read2, <a href="https://gear-genomics.embl.de/data/.slides/R2.fastq.gz">Read2</a></li>
     </ul>
 
+    <h3>Exercise 2: Cancer Genomics Data Analysis (due date 10th January 2025)</h3>
+    In this exercise we want to analyze a cancer genomics sample, namely a paired tumor-normal sample pair.
+    You can download the data set <a href="https://gear-genomics.embl.de/data/.exercise/">here</a>. 
+    The main objective of this exercise is to align the data to the human reference genome using <a href="https://github.com/lh3/bwa">bwa</a>, to sort and index the alignments using <a href="https://github.com/samtools/samtools">SAMtools</a>, to generate a read-depth plot using <a href="https://github.com/tobiasrausch/alfred">alfed</a> and to call structural variants using <a href="https://github.com/dellytools/delly">delly</a>. Please note that I downsampled the dataset and I also just kept the data for chromosome X from 20Mbp to 40Mbp so please use the chrX FASTA file for alignment available <a href="https://gear-genomics.embl.de/data/.exercise/">here</a>. Once you have finished the exercise, please submit your answer using this <a href="https://forms.gle/ZuMQ96GxZ6SP22QFA">google form</a> and don't forget to provide your email address that you used to register for the course.
+    <br>
+    In short, the steps you need to do are:
+    <ul>
+      <li>Download the reference and FASTQ files using 'wget https://gear-genomics.embl.de/data/.exercise/chrX.fa' and so on.</li>
+      <li>Index the reference file using 'bwa index chrX.fa'</li>
+      <li>Align the FASTQ files to the reference using 'bwa mem chrX.fa wt.r1.fq.gz wt.r2.fq.gz' for the control (wt) and tumor (tu).</li>
+      <li>Sort and index the alignments using samtools</li>
+      <li>Count reads in 10,000bp windows using 'alfred count_dna -o wt.cov.gz wt.bam' for the control and the tumor.</li>
+      <li>Merge the count tables row-by-row using the shell or your favorite programming language.</li>
+      <li>Call structural variants using 'delly call -g chrX.fa -o delly.bcf tu.bam wt.bam'.</li>
+    </ul>
+
+    
     <h3>Useful links</h3>
     
     Below are a couple of links to commonly used Bioinformatics tools in population and cancer genomics (certainly not comprehensive).
