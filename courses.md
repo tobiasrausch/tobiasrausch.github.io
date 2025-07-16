@@ -8,9 +8,10 @@ permalink: "/courses/"
 
 * [Methods in Genomic Variant Calling (Webinar video)](https://www.youtube.com/watch?v=zO9WCOaq3aQ)
 * [Cancer Genomics Course](https://www.ebi.ac.uk/training/events/cancer-genomics-and-transcriptomics/)
+* [Pangenomics Summer School](https://www.pangenome.eu/summer-school-2025/)
 * [Clinical Genomics and NGS Course](https://www.ceub.it/events/event/clinical-genomics-and-ngs-6/)
 * [Navigating the genomic landscape](https://www.embl.org/ells/training/navigating-the-genomic-landscape-march-2024/)
-* Analytical methods in cancer and population genomics (Annual M.Sc. Bioinformatics Course, Charles University)
+* Analytical methods in cancer and population genomics (M.Sc. Bioinformatics Course, Charles University)
 
 ## Course Materials
 
