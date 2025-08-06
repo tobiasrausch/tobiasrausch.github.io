@@ -67,14 +67,6 @@ title: Software
 
 ---
 
-[![GitHub license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tobiasrausch/rayas/blob/master/LICENSE)
-[![GitHub Releases](https://img.shields.io/github/release/tobiasrausch/lorax.svg)](https://github.com/tobiasrausch/rayas/releases)
-[![DOI:10.1016/j.xgen.2023.100281](https://zenodo.org/badge/DOI/10.1016/j.xgen.2023.100281.svg)](https://doi.org/10.1016/j.xgen.2023.100281)
-
-[Rayas](https://github.com/tobiasrausch/rayas/): Discovery of templated insertion threads
-
----
-
 ## Web applications for Molecular Biologists
 
 ### [www.gear-genomics.com](https://www.gear-genomics.com)
