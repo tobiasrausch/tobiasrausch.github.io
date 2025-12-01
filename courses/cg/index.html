@@ -10,12 +10,23 @@
 
     <h3>Course Content</h3>
 
-    This part of the course will focus on the analysis of short-read and long-read sequencing data from population and cancer genomics studies. Bioinformatic concepts, tools and methods required to analyse (tumor) sequencing data will be introduced. Learning outcomes include an overview of the challenges in the study of (cancer) genomic data sets, discovery and visualisation of copy-number and structural variants, understanding the principles of tumor purity, heterogeneity and ploidy and an overview of cancer epigenetics. The course covers different sequencing data modalities (short-reads vs. long-reads) and data types (bulk vs. single-cell). Practical data analysis sessions will complement the course.
+    This part of the course will focus on the analysis of short-read and long-read sequencing data from population and cancer genomics studies. Bioinformatic concepts, tools and methods required to analyse (tumor) sequencing data will be introduced. Learning outcomes include an overview of the challenges in the study of (cancer) genomic data sets, discovery and visualisation of copy-number and structural variants, understanding the principles of tumor purity, heterogeneity and ploidy and an overview of cancer epigenetics. The course covers different sequencing data modalities (short-reads and long-reads) and data types (bulk and single-cell). Practical data analysis sessions will complement the course.
+
+    <h3>Exercise 1: Variant Calling (due date 9th December 2025)</h3>
+
+    The goal of this exercise is to create a simple variant calling workflow for human genomic sequencing data. The workflow should contain steps to align the FASTQ files to the human reference genome (<a href="https://github.com/lh3/bwa">bwa</a>), call variants (<a href="https://samtools.github.io/bcftools/howtos/variant-calling.html">bcftools</a>) and annotate all single-nucleotide variants with (<a href="https://www.ensembl.org/Tools/VEP">VEP</a>). For this excercise you can ignore all insertions and deletions, only single-nucleotide variants (SNVs) should be considered. The data has been subsampled to chr7 to speed-up all analysis. Once you have finished the exercise, please submit your answer using this <a href="https://docs.google.com/forms/d/e/1FAIpQLScWe3EjOV3ELqrcI2-BsgvypxssgsbUvVPxWPKYVl66touowg/viewform?usp=sharing&ouid=107866491445506675294">Google Form</a>.
+    
+    <ul>
+      <li>Chromosome 7 human reference, <a href="https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr7.fa.gz">chr7</a></li>
+      <li>FASTQ of read1, <a href="https://gear-genomics.embl.de/data/.slides/R1.fastq.gz">Read1</a></li>
+      <li>FASTQ of read2, <a href="https://gear-genomics.embl.de/data/.slides/R2.fastq.gz">Read2</a></li>
+    </ul>
+
 
     <h3>Schedule</h3>
 
     <ul>
-      <li>Tbd</li>
+      <li>Tuesday 2nd December: Lecture 1 - Introduction to Cancer Genomics (Zoom), <a href="https://gear-genomics.embl.de/data/.slides/CancerGenomics.pdf">Slides</a></li>
     </ul>
 
     <h3>Useful links</h3>
@@ -62,8 +73,9 @@
     <ul>
       <li><a href="https://github.com/dellytools/delly">delly</a></li>
       <li><a href="https://github.com/arq5x/lumpy-sv">lumpy</a></li>
+      <li><a href="https://github.com/fritzsedlazeck/Sniffles">sniffles</a></li>
     </ul>
-    Working with count matrices
+    Differential expression and gene set enrichment
     <ul>
       <li><a href="http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html">DESeq2 Tutorial</a></li>
       <li><a href="https://www.gsea-msigdb.org/gsea/">Gene set enrichment analysis (GSEA)</a></li>
