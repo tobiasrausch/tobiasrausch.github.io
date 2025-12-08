@@ -12,6 +12,13 @@
 
     This part of the course will focus on the analysis of short-read and long-read sequencing data from population and cancer genomics studies. Bioinformatic concepts, tools and methods required to analyse (tumor) sequencing data will be introduced. Learning outcomes include an overview of the challenges in the study of (cancer) genomic data sets, discovery and visualisation of copy-number and structural variants, understanding the principles of tumor purity, heterogeneity and ploidy and an overview of cancer epigenetics. The course covers different sequencing data modalities (short-reads and long-reads) and data types (bulk and single-cell). Practical data analysis sessions will complement the course.
 
+    <h3>Schedule</h3>
+
+    <ul>
+      <li>Tuesday 2nd December: Lecture 1 - Introduction to Cancer Genomics (Zoom), <a href="https://gear-genomics.embl.de/data/.slides/CancerGenomics.pdf">Slides</a></li>
+      <li>Tuesday 9th December: Lecture 2 - Introduction to Cancer Genomics (Zoom), <a href="https://gear-genomics.embl.de/data/.slides/CancerGenomics.pdf">Slides</a></li>
+    </ul>
+    
     <h3>Exercise 1: Variant Calling (due date 9th December 2025)</h3>
 
     The goal of this exercise is to create a simple variant calling workflow for human genomic sequencing data. The workflow should contain steps to align the FASTQ files to the human reference genome (<a href="https://github.com/lh3/bwa">bwa</a>), call variants (<a href="https://samtools.github.io/bcftools/howtos/variant-calling.html">bcftools</a>) and annotate all single-nucleotide variants with (<a href="https://www.ensembl.org/Tools/VEP">VEP</a>). For this excercise you can ignore all insertions and deletions, only single-nucleotide variants (SNVs) should be considered. The data has been subsampled to chr7 to speed-up all analysis. Once you have finished the exercise, please submit your answer using this <a href="https://docs.google.com/forms/d/e/1FAIpQLScWe3EjOV3ELqrcI2-BsgvypxssgsbUvVPxWPKYVl66touowg/viewform?usp=sharing&ouid=107866491445506675294">Google Form</a>.
@@ -22,12 +29,10 @@
       <li>FASTQ of read2, <a href="https://gear-genomics.embl.de/data/.slides/R2.fastq.gz">Read2</a></li>
     </ul>
 
-
-    <h3>Schedule</h3>
-
-    <ul>
-      <li>Tuesday 2nd December: Lecture 1 - Introduction to Cancer Genomics (Zoom), <a href="https://gear-genomics.embl.de/data/.slides/CancerGenomics.pdf">Slides</a></li>
-    </ul>
+    <h3>Exercise 2: Cancer Genomics Data Analysis (due date 16th December 2025)</h3>
+    In this exercise we want to analyze a cancer genomics sample, namely a paired tumor-normal sample pair.
+    You can download the FASTQ data for tumor (tu) and matched control (wt) as well as the chrX reference FASTA file <a href="https://gear-genomics.embl.de/data/.exercise/">here</a>.
+    The main objective of this exercise is to align the data to the provided reference genome, to sort and index the alignments and to generate a read-depth plot similar to the one presented in the lecture. Please note that I downsampled the dataset and I also just kept the data for chromosome X from 20Mbp to 40Mbp (GRCh37/hg19 coordinates) because otherwise all analysis take a lot of time for a full human genome. Once you have generated the alignment in BAM format you can subset the BAM to the region of interest using `samtools view -b input.bam chrX:20000000-40000000 > output.bam`. You then should count reads in 10Kbp windows using one of the tools shown below and compute the log2 read-depth ratio for each window of the tumor genome against the control. You can then plot the log2 read-depth ratio values using R or python, for example. Once you have finished the exercise, please submit your answer using this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhJscChnioEQ4qA3D-AjYZK-QwYU4uPehtU-nxljGGsgaB8A/viewform?usp=sharing&ouid=107866491445506675294">Google Form</a>.
 
     <h3>Useful links</h3>
     
