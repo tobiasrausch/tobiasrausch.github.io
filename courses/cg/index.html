@@ -3,6 +3,17 @@
   <head>
     <BASE HREF="https://tobiasrausch.com/courses/cg/">
     <title>Analytical Methods in Cancer and Population Genomics</title>
+
+    <style>
+      body { font-family: Arial, sans-serif; margin: 20px; }
+      .wmec-table { border-collapse: collapse; width: 100%; max-width: 900px; }
+      .wmec-table th, .wmec-table td {
+	  border: 1px solid #bbb; padding: 6px 8px; text-align: center; font-family: monospace;
+      }
+      .wmec-table thead th { background: #f2f4f7; font-weight: bold; }
+      .read-id { background: #fafafa; font-weight: bold; }
+      .dot { color: #999; }
+    </style>
   </head>
   <body>
     
@@ -36,6 +47,46 @@
     You can download the FASTQ data for tumor (tu) and matched control (wt) as well as the chrX reference FASTA file <a href="https://gear-genomics.embl.de/data/.exercise/">here</a>.
     The main objective of this exercise is to align the data to the provided reference genome, to sort and index the alignments and to generate a read-depth plot similar to the one presented in the lecture. Please note that I downsampled the dataset and I also just kept the data for a 20Mbp region of chromosome X because otherwise all analysis take a lot of time for a full human genome. Once you have generated the alignment in BAM format you can count reads in 10Kbp windows using one of the tools shown below and compute the log2 read-depth ratio for each window of the tumor genome against the control. You can then plot the log2 read-depth ratio values using R or python, for example. Once you have finished the exercise, please submit your answer using this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhJscChnioEQ4qA3D-AjYZK-QwYU4uPehtU-nxljGGsgaB8A/viewform?usp=sharing&ouid=107866491445506675294">Google Form</a>.
 
+    <h3>Exercise 3: Haplotype Reconstruction (due date 23rd December 2025)</h3>
+    <p>
+      Use the minimum error correction (MEC) algorithm to solve the below<br>
+      read-variant matrix (10 reads R1-R10, 10 variants V1-V10) for 2 haplotypes<br>
+      H1 and H2. Identify the 2 sequencing errors.
+    </p>
+    
+    <table class="wmec-table">
+      <thead>
+	<tr>
+	  <th></th>
+	  <th>V1</th><th>V2</th><th>V3</th><th>V4</th><th>V5</th>
+	  <th>V6</th><th>V7</th><th>V8</th><th>V9</th><th>V10</th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr><td class="read-id">R1</td> <td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R2</td> <td class="dot">.</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R3</td> <td class="dot">.</td><td class="dot">.</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+	
+	<tr><td class="read-id">R4</td> <td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R5</td> <td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R6</td> <td class="dot">.</td><td class="dot">.</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R7</td> <td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R8</td> <td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+	
+	<tr><td class="read-id">R9</td> <td class="dot">.</td><td>1</td><td>0</td><td>1</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td><td class="dot">.</td></tr>
+	
+	<tr><td class="read-id">R10</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+	
+      </tbody>
+    </table>
+    
+    
     <h3>Useful links</h3>
     
     Below are a couple of links to commonly used Bioinformatics tools in population and cancer genomics (certainly not comprehensive).
